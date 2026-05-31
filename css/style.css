@@ -1,0 +1,523 @@
+:root {
+  --fcw-blau: #2268B2;
+  --fcw-blau-dark: #1a5490;
+  --fcw-gelb: #FFD200;
+  --fcw-rot: #D42027;
+  --fcw-weiss: #FFFFFF;
+  --fcw-dunkel: #1a1a1a;
+  --fcw-grau: #f4f4f4;
+  --fcw-grau-mid: #e0e0e0;
+  --radius: 10px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  background: var(--fcw-grau);
+  color: var(--fcw-dunkel);
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: var(--fcw-blau);
+  color: var(--fcw-weiss);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.header img {
+  height: 48px;
+  width: auto;
+}
+
+.header h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.header h1 small {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+/* ===== FILTER ===== */
+.filter-bar {
+  padding: 12px 16px;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  background: var(--fcw-weiss);
+  border-bottom: 1px solid var(--fcw-grau-mid);
+  position: sticky;
+  top: 80px;
+  z-index: 90;
+}
+
+.filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 8px;
+  border: 2px solid var(--fcw-blau);
+  border-radius: 20px;
+  background: var(--fcw-weiss);
+  color: var(--fcw-blau);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.filter-btn:hover {
+  background: var(--fcw-blau);
+  color: var(--fcw-weiss);
+}
+
+.filter-btn.active {
+  background: var(--fcw-blau);
+  color: var(--fcw-weiss);
+  border-color: var(--fcw-blau);
+  box-shadow: 0 2px 4px rgba(34,104,178,0.3);
+}
+
+/* ===== TRAININGS-KARTEN ===== */
+.content {
+  padding: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.training-card {
+  background: var(--fcw-weiss);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 14px;
+  overflow: hidden;
+  transition: transform 0.15s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.training-card:active {
+  transform: scale(0.98);
+}
+
+.training-card-header {
+  background: var(--fcw-blau);
+  color: var(--fcw-weiss);
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.training-card-header h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  flex: 1;
+}
+
+.training-nr {
+  background: var(--fcw-gelb);
+  color: var(--fcw-dunkel);
+  font-size: 0.85rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-thema {
+  background: var(--fcw-gelb);
+  color: var(--fcw-dunkel);
+}
+
+.badge-dauer {
+  background: rgba(255,255,255,0.2);
+  color: var(--fcw-weiss);
+}
+
+.training-card-body {
+  padding: 14px 18px;
+}
+
+.training-card-body p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.training-card-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.training-card-meta span::before {
+  margin-right: 4px;
+}
+
+/* ===== TRAININGS-DETAIL ===== */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  margin: 16px;
+  background: var(--fcw-blau);
+  color: var(--fcw-weiss);
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.back-link:hover {
+  background: var(--fcw-blau-dark);
+}
+
+.training-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px 30px;
+}
+
+.training-detail .meta-info {
+  background: var(--fcw-weiss);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.uebung {
+  background: var(--fcw-weiss);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+
+.uebung h2 {
+  color: var(--fcw-blau);
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  border-left: 4px solid var(--fcw-gelb);
+  padding-left: 12px;
+}
+
+.uebung p {
+  margin-bottom: 8px;
+  font-size: 0.92rem;
+}
+
+.uebung ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.uebung li {
+  margin-bottom: 5px;
+  font-size: 0.92rem;
+}
+
+.uebung strong {
+  color: var(--fcw-dunkel);
+}
+
+.uebung blockquote {
+  background: #edf4fc;
+  border-left: 4px solid var(--fcw-blau);
+  padding: 10px 14px;
+  margin: 12px 0;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* ===== SVG SKIZZEN ===== */
+.skizze {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+  overflow-x: auto;
+}
+
+.skizze svg {
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  max-width: 100%;
+  height: auto;
+}
+
+.legende {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 8px 0 12px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.legende span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ===== TABELLE ===== */
+.uebung table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+
+.uebung th {
+  background: var(--fcw-blau);
+  color: var(--fcw-weiss);
+  padding: 10px;
+  text-align: left;
+}
+
+.uebung td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--fcw-grau-mid);
+}
+
+.uebung tr:nth-child(even) {
+  background: var(--fcw-grau);
+}
+
+.uebung tr:last-child td {
+  font-weight: 700;
+}
+
+/* ===== TIPPS-SEITE ===== */
+.tipps-card {
+  background: var(--fcw-weiss);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--fcw-gelb);
+}
+
+.tipps-card h2 {
+  color: var(--fcw-blau);
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.tipps-card p, .tipps-card li {
+  font-size: 0.92rem;
+}
+
+.highlight-box {
+  background: #fef9e7;
+  border: 1px solid var(--fcw-gelb);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin-top: 20px;
+  font-size: 0.92rem;
+}
+
+/* ===== SEKTIONEN ===== */
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--fcw-blau);
+  margin-bottom: 14px;
+  padding-left: 2px;
+}
+
+.section-divider {
+  border: none;
+  border-top: 2px solid var(--fcw-grau-mid);
+  margin: 8px 20px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== EMPTY STATE ===== */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+
+.empty-state p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* ===== ÜBUNGS-NAVIGATION (STICKY BOTTOM) ===== */
+.uebung-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--fcw-blau);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  z-index: 100;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+}
+
+.uebung-nav button {
+  background: none;
+  border: none;
+  color: var(--fcw-weiss);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 14px 24px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: background 0.15s;
+  min-width: 70px;
+}
+
+.uebung-nav button:hover {
+  background: var(--fcw-blau-dark);
+}
+
+.uebung-nav button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.uebung-nav button:disabled:hover {
+  background: none;
+}
+
+.uebung-nav .uebung-nav-info {
+  font-size: 0.9rem;
+  color: var(--fcw-weiss);
+  font-weight: 600;
+  text-align: center;
+  flex: 1;
+  line-height: 1.2;
+}
+
+.uebung-nav .uebung-nav-info small {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-top: 2px;
+}
+
+.has-uebung-nav .training-detail {
+  padding-bottom: 80px;
+}
+
+.has-uebung-nav .footer {
+  padding-bottom: 70px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.75rem;
+  color: #999;
+  border-top: 1px solid var(--fcw-grau-mid);
+  margin-top: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 600px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header img {
+    height: 56px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .training-card-header h2 {
+    font-size: 1.1rem;
+  }
+}
+
+/* ===== PRINT ===== */
+@media print {
+  .header {
+    position: static;
+    box-shadow: none;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .filter-bar {
+    display: none;
+  }
+
+  .back-link {
+    display: none;
+  }
+
+  .uebung-nav {
+    display: none;
+  }
+
+  .training-card, .uebung, .tipps-card {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    break-inside: avoid;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .skizze svg {
+    box-shadow: none;
+  }
+}
