@@ -2,6 +2,13 @@ document.addEventListener('DOMContentLoaded', function () {
   var uebungen = document.querySelectorAll('.training-detail > .uebung');
   if (uebungen.length < 2) return;
 
+  var themaMeta = document.querySelector('meta[name="thema"]');
+  var thema = themaMeta ? themaMeta.getAttribute('content') : '';
+  var backLink = document.querySelector('.back-link');
+  if (backLink && thema) {
+    backLink.href = '../index.html?thema=' + thema;
+  }
+
   document.body.classList.add('has-uebung-nav');
 
   var nav = document.createElement('nav');
@@ -76,9 +83,11 @@ document.addEventListener('DOMContentLoaded', function () {
   btnPrev.addEventListener('click', function () { scrollTo(current - 1); });
   btnNext.addEventListener('click', function () {
     if (current === uebungen.length - 1) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      current = -1;
-      update();
+      if (backLink) {
+        window.location.href = backLink.href;
+      } else {
+        window.location.href = '../index.html';
+      }
     } else {
       scrollTo(current + 1);
     }
