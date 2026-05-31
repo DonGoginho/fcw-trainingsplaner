@@ -1,6 +1,6 @@
 # FCW E2 Trainingsplaner
 
-Mobile-first Website für die Trainingsplanung der **E2-Junioren beim FC Wiedikon**, Saison 2025/2026.
+Mobile-first Website für die Trainingsplanung der **E2-Junioren**, Saison 2025/2026.
 
 ## Features
 
@@ -35,5 +35,5 @@ Reines HTML/CSS/JS – kein Framework, kein Build-Tool. Einfach `index.html` im 
 
 ## Lizenz
 
-Erstellt für den internen Gebrauch des FC Wiedikon E2-Trainerteams.
+Erstellt für den internen Gebrauch des FCW E2-Trainerteams.
 Trainingskonzepte mit Unterstützung von KI (Claude, Anthropic).
