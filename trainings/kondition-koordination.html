@@ -67,6 +67,46 @@
       <p><strong>Ziel:</strong> Verschiedene Bewegungsmuster, Beinarbeit, Kopf-Fuss-Koordination</p>
       <p><strong>Aufbau:</strong> Alle 13 im Kreis (ca. 15m Durchmesser), jeder auf seinem Platz.</p>
 
+      <div class="skizze">
+        <svg width="400" height="400" viewBox="0 0 400 400">
+          <rect x="10" y="10" width="380" height="380" rx="6" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+          <!-- Kreis -->
+          <circle cx="200" cy="200" r="130" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-dasharray="8,4"/>
+          <!-- Spieler im Kreis (13 Positionen) -->
+          <circle cx="200" cy="70" r="14" fill="#2268B2"/>
+          <circle cx="265" cy="82" r="14" fill="#2268B2"/>
+          <circle cx="315" cy="125" r="14" fill="#2268B2"/>
+          <circle cx="330" cy="190" r="14" fill="#2268B2"/>
+          <circle cx="310" cy="260" r="14" fill="#2268B2"/>
+          <circle cx="265" cy="310" r="14" fill="#2268B2"/>
+          <circle cx="200" cy="330" r="14" fill="#2268B2"/>
+          <circle cx="135" cy="310" r="14" fill="#2268B2"/>
+          <circle cx="90" cy="260" r="14" fill="#2268B2"/>
+          <circle cx="70" cy="190" r="14" fill="#2268B2"/>
+          <circle cx="85" cy="125" r="14" fill="#2268B2"/>
+          <circle cx="135" cy="82" r="14" fill="#2268B2"/>
+          <circle cx="250" cy="130" r="14" fill="#2268B2"/>
+          <!-- Trainer in der Mitte -->
+          <rect x="170" y="188" width="60" height="25" rx="4" fill="rgba(0,0,0,0.5)"/>
+          <text x="200" y="205" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">Trainer</text>
+          <!-- Bewegungs-Symbole -->
+          <text x="200" y="160" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="11" font-style="italic">macht vor</text>
+          <!-- Pfeile für Nachmachen -->
+          <defs>
+            <marker id="arrowKr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="rgba(255,255,255,0.5)"/>
+            </marker>
+          </defs>
+          <path d="M200,215 L200,315" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowKr)"/>
+          <path d="M200,215 L300,255" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowKr)"/>
+          <path d="M200,215 L100,255" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowKr)"/>
+        </svg>
+      </div>
+      <div class="legende">
+        <span><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#2268B2"/></svg> Spieler (13)</span>
+        <span>Trainer in der Mitte macht vor, alle machen nach</span>
+      </div>
+
       <p><strong>Ablauf (Trainer macht vor, alle machen nach):</strong></p>
       <ul>
         <li><strong>Kniehebe-Lauf:</strong> Knie hoch, Arme mit, auf der Stelle (30 Sek.)</li>
@@ -83,6 +123,81 @@
       <h2>3. Hauptteil A: "Koordinations-Parcours mit Abschluss" (20 Min)</h2>
       <p><strong>Ziel:</strong> Koordination unter Ermüdung, danach saubere Technik (Torschuss)</p>
       <p><strong>Aufbau:</strong> 2 Parcours nebeneinander, am Ende je ein grosses Tor. 6-7 Spieler pro Parcours.</p>
+
+      <div class="skizze">
+        <svg width="520" height="260" viewBox="0 0 520 260">
+          <rect x="10" y="10" width="500" height="230" rx="6" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+          <defs>
+            <marker id="arrowPa" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#FFD200"/>
+            </marker>
+          </defs>
+          <!-- Parcours oben -->
+          <text x="260" y="35" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">Parcours 1</text>
+          <!-- Station 1: Hürden -->
+          <rect x="80" y="50" width="80" height="45" rx="3" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <text x="120" y="65" text-anchor="middle" fill="#fff" font-size="9">Hürden</text>
+          <line x1="90" y1="80" x2="110" y2="80" stroke="#ff9800" stroke-width="3"/>
+          <line x1="115" y1="80" x2="135" y2="80" stroke="#ff9800" stroke-width="3"/>
+          <line x1="140" y1="80" x2="150" y2="80" stroke="#ff9800" stroke-width="3"/>
+          <!-- Station 2: Slalom seitlich -->
+          <rect x="175" y="50" width="80" height="45" rx="3" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <text x="215" y="65" text-anchor="middle" fill="#fff" font-size="9">Slalom</text>
+          <polygon points="185,85 188,78 191,85" fill="#ff9800"/>
+          <polygon points="200,75 203,68 206,75" fill="#ff9800"/>
+          <polygon points="215,85 218,78 221,85" fill="#ff9800"/>
+          <polygon points="230,75 233,68 236,75" fill="#ff9800"/>
+          <polygon points="245,85 248,78 251,85" fill="#ff9800"/>
+          <!-- Station 3: Einbein -->
+          <rect x="270" y="50" width="80" height="45" rx="3" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <text x="310" y="65" text-anchor="middle" fill="#fff" font-size="9">Einbein</text>
+          <circle cx="285" cy="82" r="4" fill="#FFD200"/>
+          <circle cx="300" cy="82" r="4" fill="#FFD200"/>
+          <circle cx="315" cy="82" r="4" fill="#FFD200"/>
+          <circle cx="330" cy="82" r="4" fill="#FFD200"/>
+          <circle cx="345" cy="82" r="4" fill="#FFD200"/>
+          <!-- Station 4: Torschuss -->
+          <rect x="365" y="50" width="100" height="45" rx="3" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <text x="415" y="65" text-anchor="middle" fill="#fff" font-size="9">Torschuss</text>
+          <circle cx="385" cy="82" r="6" fill="#fff" stroke="#333" stroke-width="1.5"/>
+          <rect x="455" y="65" width="8" height="30" rx="2" fill="#fff" stroke="#333" stroke-width="1.5"/>
+          <!-- Laufpfeil oben -->
+          <path d="M55,75 L465,75" fill="none" stroke="#FFD200" stroke-width="2" stroke-dasharray="8,4" marker-end="url(#arrowPa)"/>
+          <circle cx="45" cy="75" r="12" fill="#2268B2"/>
+
+          <!-- Parcours unten -->
+          <text x="260" y="135" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">Parcours 2</text>
+          <rect x="80" y="145" width="80" height="45" rx="3" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <text x="120" y="160" text-anchor="middle" fill="#fff" font-size="9">Hürden</text>
+          <line x1="90" y1="175" x2="110" y2="175" stroke="#ff9800" stroke-width="3"/>
+          <line x1="115" y1="175" x2="135" y2="175" stroke="#ff9800" stroke-width="3"/>
+          <line x1="140" y1="175" x2="150" y2="175" stroke="#ff9800" stroke-width="3"/>
+
+          <rect x="175" y="145" width="80" height="45" rx="3" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <text x="215" y="160" text-anchor="middle" fill="#fff" font-size="9">Slalom</text>
+          <polygon points="185,180 188,173 191,180" fill="#ff9800"/>
+          <polygon points="200,170 203,163 206,170" fill="#ff9800"/>
+          <polygon points="215,180 218,173 221,180" fill="#ff9800"/>
+          <polygon points="230,170 233,163 236,170" fill="#ff9800"/>
+          <polygon points="245,180 248,173 251,180" fill="#ff9800"/>
+
+          <rect x="270" y="145" width="80" height="45" rx="3" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <text x="310" y="160" text-anchor="middle" fill="#fff" font-size="9">Einbein</text>
+
+          <rect x="365" y="145" width="100" height="45" rx="3" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <text x="415" y="160" text-anchor="middle" fill="#fff" font-size="9">Torschuss</text>
+          <circle cx="385" cy="177" r="6" fill="#fff" stroke="#333" stroke-width="1.5"/>
+          <rect x="455" y="160" width="8" height="30" rx="2" fill="#fff" stroke="#333" stroke-width="1.5"/>
+          <path d="M55,170 L465,170" fill="none" stroke="#FFD200" stroke-width="2" stroke-dasharray="8,4" marker-end="url(#arrowPa)"/>
+          <circle cx="45" cy="170" r="12" fill="#D42027"/>
+        </svg>
+      </div>
+      <div class="legende">
+        <span><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#2268B2"/></svg> Parcours 1</span>
+        <span><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#D42027"/></svg> Parcours 2</span>
+        <span><svg width="16" height="10"><line x1="0" y1="5" x2="16" y2="5" stroke="#ff9800" stroke-width="3"/></svg> Stange/Hürde</span>
+        <span><svg width="16" height="16"><rect x="1" y="1" width="14" height="14" rx="2" fill="#fff" stroke="#333" stroke-width="1.5"/></svg> Tor</span>
+      </div>
 
       <p><strong>Parcours-Stationen:</strong></p>
       <ul>
@@ -107,6 +222,43 @@
       <h2>5. Hauptteil B: "Gleichgewicht-Spiel" (22 Min)</h2>
       <p><strong>Ziel:</strong> Balance und Stabilität im Spielkontext, standfest im Zweikampf</p>
       <p><strong>Aufbau:</strong> Feld ca. 35x25m, 2 Tore. 6 gegen 6 + 1 neutraler Spieler.</p>
+
+      <div class="skizze">
+        <svg width="500" height="340" viewBox="0 0 500 340">
+          <rect x="10" y="10" width="480" height="300" rx="6" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+          <text x="250" y="330" text-anchor="middle" fill="#2e7d32" font-size="12" font-weight="bold">35 x 25 m</text>
+          <!-- Tore -->
+          <rect x="2" y="130" width="10" height="60" rx="2" fill="#fff" stroke="#333" stroke-width="2"/>
+          <rect x="488" y="130" width="10" height="60" rx="2" fill="#fff" stroke="#333" stroke-width="2"/>
+          <!-- Team Blau -->
+          <circle cx="80" cy="110" r="14" fill="#2268B2"/><text x="80" y="115" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">B</text>
+          <circle cx="120" cy="200" r="14" fill="#2268B2"/><text x="120" y="205" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">B</text>
+          <circle cx="200" cy="140" r="14" fill="#2268B2"/><text x="200" y="145" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">B</text>
+          <circle cx="180" cy="250" r="14" fill="#2268B2"/><text x="180" y="255" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">B</text>
+          <circle cx="100" cy="280" r="14" fill="#2268B2"/><text x="100" y="285" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">B</text>
+          <circle cx="220" cy="80" r="14" fill="#2268B2"/><text x="220" y="85" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">B</text>
+          <!-- Team Rot -->
+          <circle cx="340" cy="100" r="14" fill="#D42027"/><text x="340" y="105" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">R</text>
+          <circle cx="380" cy="190" r="14" fill="#D42027"/><text x="380" y="195" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">R</text>
+          <circle cx="420" cy="260" r="14" fill="#D42027"/><text x="420" y="265" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">R</text>
+          <circle cx="300" cy="250" r="14" fill="#D42027"/><text x="300" y="255" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">R</text>
+          <circle cx="440" cy="140" r="14" fill="#D42027"/><text x="440" y="145" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">R</text>
+          <circle cx="360" cy="290" r="14" fill="#D42027"/><text x="360" y="295" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">R</text>
+          <!-- Neutraler -->
+          <circle cx="250" cy="160" r="14" fill="#9e9e9e" stroke="#fff" stroke-width="2"/><text x="250" y="165" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">N</text>
+          <!-- Zweikampf-Szene -->
+          <circle cx="310" cy="170" r="20" fill="none" stroke="#FFD200" stroke-width="2" stroke-dasharray="4,3"/>
+          <text x="310" y="155" text-anchor="middle" fill="#FFD200" font-size="9" font-weight="bold">Zweikampf!</text>
+          <!-- Bonus-Label -->
+          <rect x="160" y="30" width="180" height="25" rx="8" fill="rgba(255,210,0,0.9)"/>
+          <text x="250" y="48" text-anchor="middle" fill="#333" font-size="12" font-weight="bold">Ball behauptet = Bonus</text>
+        </svg>
+      </div>
+      <div class="legende">
+        <span><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#2268B2"/></svg> Team Blau (6)</span>
+        <span><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#D42027"/></svg> Team Rot (6)</span>
+        <span><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#9e9e9e" stroke="#fff" stroke-width="1.5"/></svg> Neutraler</span>
+      </div>
 
       <p><strong>Ablauf:</strong></p>
       <ul>
