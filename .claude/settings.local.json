@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(robocopy \"C:\\\\Users\\\\sszsim\\\\OneDrive - Stadt Zürich\\\\privat\\\\gogo\\\\fcw\\\\2025_2026\\\\07_rueckrunde\" \"G:\\\\sszsim\\\\0_claude_code\\\\fussball-trainer\\\\2_trainingsgestaltung\" /E /COPY:DAT /DCOPY:DAT /R:1 /W:1 /NFL /NDL /NJH)"
+    ]
+  }
+}
