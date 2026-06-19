@@ -12,21 +12,21 @@ document.addEventListener('DOMContentLoaded', function () {
     if (activeBtn) activeBtn.classList.add('active');
 
     if (section === 'alle') {
-      grundsaetzeSection.style.display = '';
-      trainingsSection.style.display = '';
-      divider.style.display = '';
+      if (grundsaetzeSection) grundsaetzeSection.style.display = '';
+      if (trainingsSection) trainingsSection.style.display = '';
+      if (divider) divider.style.display = '';
       trainingsCards.forEach(function (card) { card.style.display = ''; });
       if (emptyState) emptyState.style.display = 'none';
 
     } else if (section === 'grundsaetze') {
-      grundsaetzeSection.style.display = '';
-      trainingsSection.style.display = 'none';
-      divider.style.display = 'none';
+      if (grundsaetzeSection) grundsaetzeSection.style.display = '';
+      if (trainingsSection) trainingsSection.style.display = 'none';
+      if (divider) divider.style.display = 'none';
 
     } else {
-      grundsaetzeSection.style.display = 'none';
-      trainingsSection.style.display = '';
-      divider.style.display = 'none';
+      if (grundsaetzeSection) grundsaetzeSection.style.display = 'none';
+      if (trainingsSection) trainingsSection.style.display = '';
+      if (divider) divider.style.display = 'none';
 
       var visibleCount = 0;
       trainingsCards.forEach(function (card) {

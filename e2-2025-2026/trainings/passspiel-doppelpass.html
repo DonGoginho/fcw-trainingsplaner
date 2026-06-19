@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P-3 Doppelpass & Wandspiel – FCW E2</title>
+  <meta name="thema" content="passspiel">
+  <meta name="dauer" content="90">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="apple-touch-icon" href="../../img/FCW_logo.png">
+  <meta name="theme-color" content="#2268B2">
+</head>
+<body>
+
+  <header class="header">
+    <img src="../../img/FCW_logo.png" alt="FC Wiedikon Logo">
+    <h1>Trainingsplaner<small>E2-Junioren 2025/2026</small></h1>
+  </header>
+
+  <a class="back-link" href="../index.html">&larr; Zurück</a>
+
+  <div class="training-detail">
+
+    <div class="meta-info">
+      <span class="badge badge-thema" style="background: var(--fcw-rot); color: #fff;">Passspiel</span>
+      <span class="badge" style="background: var(--fcw-blau); color: #fff;">90 Min</span>
+      <span class="badge" style="background: var(--fcw-grau-mid); color: #333;">13 Spieler</span>
+    </div>
+
+    <div class="uebung">
+      <h2>Zeitübersicht</h2>
+      <table>
+        <tr><th>Phase</th><th>Dauer</th><th>Inhalt</th></tr>
+        <tr><td>Besammlung</td><td>3 Min</td><td>Begrüssung, Tagesregel</td></tr>
+        <tr><td>Aufwärmen</td><td>12 Min</td><td>Doppelpass-Parcours</td></tr>
+        <tr><td>Hauptteil A</td><td>20 Min</td><td>Wandspiel 2v1 auf Bahnen</td></tr>
+        <tr><td>Pause</td><td>3 Min</td><td>Trinken</td></tr>
+        <tr><td>Hauptteil B</td><td>22 Min</td><td>Doppelpass-Tor-Spiel</td></tr>
+        <tr><td>Abschlussspiel</td><td>25 Min</td><td>Freies Spiel mit Doppelpass-Bonus</td></tr>
+        <tr><td>Abschluss</td><td>5 Min</td><td>Feedback, Aufräumen</td></tr>
+        <tr><td>Total</td><td>90 Min</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="uebung">
+      <h2>Material</h2>
+      <ul>
+        <li>16 Hütchen</li>
+        <li>6 Leibchen (2 Farben)</li>
+        <li>Genug Bälle</li>
+        <li>2 grosse Tore + 4 Hütchentore</li>
+      </ul>
+    </div>
+
+    <div class="uebung">
+      <h2>1. Besammlung & Tagesregel (3 Min)</h2>
+      <p>Alle im Kreis:</p>
+      <blockquote>
+        "Heute üben wir den Doppelpass &ndash; die stärkste Waffe gegen einen Verteidiger. Pass zum Mitspieler, sofort loslaufen, Ball zurückbekommen &ndash; und schon seid ihr am Gegner vorbei. Meine Regel: Pass und Sprint &ndash; wer stehen bleibt, bekommt den Ball nicht zurück."
+      </blockquote>
+    </div>
+
+    <div class="uebung">
+      <h2>2. Aufwärmen: "Doppelpass-Parcours" (12 Min)</h2>
+      <p><strong>Ziel:</strong> Rhythmus Doppelpass: Pass &ndash; Sprint &ndash; Rückpass</p>
+      <p><strong>Aufbau:</strong> 2 Parcours parallel. Pro Parcours 3 Wandspieler an festen Positionen (Hütchen). Restliche dribbeln und spielen Doppelpässe.</p>
+
+      <div class="skizze">
+        <svg width="520" height="280" viewBox="0 0 520 280">
+          <rect x="10" y="10" width="500" height="240" rx="6" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+          <!-- Parcours 1 -->
+          <!-- Wandspieler -->
+          <circle cx="120" cy="60" r="14" fill="#FFD200"/><text x="120" y="64" text-anchor="middle" fill="#333" font-size="9" font-weight="bold">W</text>
+          <circle cx="250" cy="60" r="14" fill="#FFD200"/><text x="250" y="64" text-anchor="middle" fill="#333" font-size="9" font-weight="bold">W</text>
+          <circle cx="380" cy="60" r="14" fill="#FFD200"/><text x="380" y="64" text-anchor="middle" fill="#333" font-size="9" font-weight="bold">W</text>
+          <!-- Hütchen-Gegner -->
+          <circle cx="120" cy="110" r="6" fill="#D42027" opacity="0.5"/>
+          <circle cx="250" cy="110" r="6" fill="#D42027" opacity="0.5"/>
+          <circle cx="380" cy="110" r="6" fill="#D42027" opacity="0.5"/>
+          <!-- Dribbelnder -->
+          <circle cx="50" cy="110" r="14" fill="#2268B2"/><text x="50" y="114" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">D</text>
+          <circle cx="58" cy="102" r="4" fill="#fff" stroke="#333" stroke-width="1"/>
+          <!-- Pass zum Wandspieler -->
+          <defs>
+            <marker id="arrP3" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+              <path d="M0,0 L7,3.5 L0,7 Z" fill="#FFD200"/>
+            </marker>
+            <marker id="arrP3b" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+              <path d="M0,0 L7,3.5 L0,7 Z" fill="#2268B2"/>
+            </marker>
+          </defs>
+          <path d="M58,100 Q85,75 112,65" fill="none" stroke="#FFD200" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrP3)"/>
+          <!-- Sprint am Gegner vorbei -->
+          <path d="M55,118 Q80,130 135,118" fill="none" stroke="#2268B2" stroke-width="2" stroke-dasharray="3,2" marker-end="url(#arrP3b)"/>
+          <!-- Rückpass -->
+          <path d="M125,72 Q145,100 150,110" fill="none" stroke="#FFD200" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrP3)"/>
+          <text x="85" y="140" fill="#2268B2" font-size="8">Sprint!</text>
+
+          <!-- Parcours 2 -->
+          <circle cx="120" cy="180" r="14" fill="#FFD200"/><text x="120" y="184" text-anchor="middle" fill="#333" font-size="9" font-weight="bold">W</text>
+          <circle cx="250" cy="180" r="14" fill="#FFD200"/><text x="250" y="184" text-anchor="middle" fill="#333" font-size="9" font-weight="bold">W</text>
+          <circle cx="380" cy="180" r="14" fill="#FFD200"/><text x="380" y="184" text-anchor="middle" fill="#333" font-size="9" font-weight="bold">W</text>
+          <circle cx="120" cy="210" r="6" fill="#D42027" opacity="0.5"/>
+          <circle cx="250" cy="210" r="6" fill="#D42027" opacity="0.5"/>
+          <circle cx="380" cy="210" r="6" fill="#D42027" opacity="0.5"/>
+          <circle cx="50" cy="210" r="14" fill="#2268B2"/>
+          <!-- Wartende am Start -->
+          <circle cx="30" cy="140" r="10" fill="#2268B2" opacity="0.4"/>
+          <circle cx="30" cy="160" r="10" fill="#2268B2" opacity="0.4"/>
+        </svg>
+      </div>
+      <div class="legende">
+        <span><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#2268B2"/></svg> Dribbelnde</span>
+        <span><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#FFD200"/></svg> Wandspieler (fest)</span>
+        <span><svg width="16" height="16"><circle cx="8" cy="8" r="5" fill="#D42027" opacity="0.5"/></svg> Hütchen-Gegner</span>
+      </div>
+
+      <p><strong>Ablauf:</strong></p>
+      <ul>
+        <li>Alle 13: 6 Wandspieler (3 pro Parcours), 7 Dribbelnde (verteilt auf 2 Parcours)</li>
+        <li>Dribbeln, vor dem Hütchen-Gegner Pass zum Wandspieler, Sprint am Gegner vorbei, Rückpass empfangen</li>
+        <li>3 Doppelpässe pro Durchlauf, dann nächster Spieler</li>
+        <li>Wandspieler wechseln alle 3 Min</li>
+      </ul>
+    </div>
+
+    <div class="uebung">
+      <h2>3. Hauptteil A: "Wandspiel 2v1" (20 Min)</h2>
+      <p><strong>Ziel:</strong> Doppelpass gegen echten Verteidiger anwenden</p>
+      <p><strong>Aufbau:</strong> 3 Bahnen (je 20x10m) mit Hütchentor am Ende. Pro Bahn: 2 Angreifer vs. 1 Verteidiger. Restliche 4 rotieren.</p>
+
+      <div class="skizze">
+        <svg width="520" height="280" viewBox="0 0 520 280">
+          <!-- Bahn 1 -->
+          <rect x="10" y="10" width="160" height="230" rx="6" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+          <!-- Hütchentor -->
+          <circle cx="70" cy="25" r="5" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <circle cx="110" cy="25" r="5" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <line x1="75" y1="25" x2="105" y2="25" stroke="#FFD200" stroke-width="2.5"/>
+          <!-- Verteidiger -->
+          <circle cx="90" cy="100" r="14" fill="#D42027"/><text x="90" y="104" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">V</text>
+          <!-- 2 Angreifer -->
+          <circle cx="60" cy="180" r="14" fill="#2268B2"/><text x="60" y="184" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">A1</text>
+          <circle cx="120" cy="180" r="14" fill="#2268B2"/><text x="120" y="184" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">A2</text>
+          <circle cx="68" cy="172" r="4" fill="#fff" stroke="#333" stroke-width="1"/>
+          <!-- Doppelpass-Pfeile -->
+          <path d="M68,172 Q95,160 115,172" fill="none" stroke="#FFD200" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrP3)"/>
+          <path d="M62,168 Q65,120 75,40" fill="none" stroke="#2268B2" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#arrP3b)"/>
+          <path d="M118,168 Q100,110 70,40" fill="none" stroke="#FFD200" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrP3)"/>
+          <text x="90" y="255" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="bold">Bahn 1</text>
+
+          <!-- Bahn 2 -->
+          <rect x="180" y="10" width="160" height="230" rx="6" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+          <circle cx="240" cy="25" r="5" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <circle cx="280" cy="25" r="5" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <line x1="245" y1="25" x2="275" y2="25" stroke="#FFD200" stroke-width="2.5"/>
+          <circle cx="260" cy="100" r="14" fill="#D42027"/><text x="260" y="104" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">V</text>
+          <circle cx="230" cy="180" r="14" fill="#2268B2"/><text x="230" y="184" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">A1</text>
+          <circle cx="290" cy="180" r="14" fill="#2268B2"/><text x="290" y="184" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">A2</text>
+          <text x="260" y="255" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="bold">Bahn 2</text>
+
+          <!-- Bahn 3 -->
+          <rect x="350" y="10" width="160" height="230" rx="6" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+          <circle cx="410" cy="25" r="5" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <circle cx="450" cy="25" r="5" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <line x1="415" y1="25" x2="445" y2="25" stroke="#FFD200" stroke-width="2.5"/>
+          <circle cx="430" cy="100" r="14" fill="#D42027"/><text x="430" y="104" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">V</text>
+          <circle cx="400" cy="180" r="14" fill="#2268B2"/><text x="400" y="184" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">A1</text>
+          <circle cx="460" cy="180" r="14" fill="#2268B2"/><text x="460" y="184" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">A2</text>
+          <text x="430" y="255" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="bold">Bahn 3</text>
+        </svg>
+      </div>
+
+      <p><strong>Ablauf:</strong></p>
+      <ul>
+        <li>3 Bahnen gleichzeitig: 2 Angreifer versuchen mit Doppelpass am Verteidiger vorbei durchs Hütchentor zu spielen</li>
+        <li>A1 passt zu A2, sprintet am Verteidiger vorbei, A2 spielt den Rückpass in den Lauf</li>
+        <li>Durchgespielt = 2 Punkte. Verteidiger erobert = 1 Punkt für Verteidiger</li>
+      </ul>
+      <p><strong>Coaching:</strong></p>
+      <ul>
+        <li>"Pass und SOFORT sprinten &ndash; nicht warten und schauen!"</li>
+        <li>"Rückpass in den Lauf &ndash; nicht in die Füsse, sondern in den Raum dahinter"</li>
+        <li>"Timing: der Sprint muss kommen, bevor der Verteidiger sich dreht"</li>
+      </ul>
+      <p><strong>Steigerung nach 10 Min:</strong></p>
+      <ul>
+        <li>2 gegen 2: Zweiter Verteidiger kommt dazu. Doppelpass wird noch wichtiger!</li>
+      </ul>
+    </div>
+
+    <div class="uebung">
+      <h2>4. Trinkpause (3 Min)</h2>
+    </div>
+
+    <div class="uebung">
+      <h2>5. Hauptteil B: "Doppelpass-Tor-Spiel" (22 Min)</h2>
+      <p><strong>Ziel:</strong> Doppelpass als Mittel zum Torerfolg im Spielkontext</p>
+      <p><strong>Aufbau:</strong> Feld ca. 40x30m, 2 Tore. 6 gegen 6 + 1 neutraler Spieler.</p>
+
+      <p><strong>Ablauf:</strong></p>
+      <ul>
+        <li>Normales Spiel, 6 gegen 6 + 1 Neutraler</li>
+        <li><strong>Sonderregel:</strong> Ein Tor, das direkt nach einem Doppelpass fällt (max. 3 Sekunden nach dem Rückpass), zählt dreifach</li>
+        <li>Trainer zählt laut mit und bestätigt Doppelpass-Tore</li>
+      </ul>
+      <p><strong>Coaching:</strong></p>
+      <ul>
+        <li>"Sucht den Doppelpass vor dem Strafraum &ndash; da ist er am gefährlichsten!"</li>
+        <li>"Nicht erzwingen &ndash; wenn der Verteidiger den Passweg schliesst, gibt's andere Optionen"</li>
+      </ul>
+      <p><strong>Steigerung nach 12 Min:</strong></p>
+      <ul>
+        <li>Jeder Spieler muss mindestens 1 Doppelpass pro Angriff versuchen, bevor aufs Tor geschossen werden darf</li>
+      </ul>
+    </div>
+
+    <div class="uebung">
+      <h2>6. Abschlussspiel (25 Min)</h2>
+      <p><strong>Aufbau:</strong> Normales Spielfeld, 2 Tore. 6 gegen 6, 1 neutraler Spieler.</p>
+      <p><strong>Regeln:</strong></p>
+      <ul>
+        <li>Freies Spiel</li>
+        <li>Trainer lobt jeden gelungenen Doppelpass</li>
+      </ul>
+    </div>
+
+    <div class="uebung">
+      <h2>7. Abschluss (5 Min)</h2>
+      <ul>
+        <li>"Was sind die 3 Schritte beim Doppelpass?" &rarr; "Pass, Sprint, Rückpass empfangen"</li>
+        <li>"Was passiert, wenn ihr nach dem Pass stehen bleibt?" &rarr; "Kein Doppelpass möglich &ndash; der Gegner bleibt dran"</li>
+      </ul>
+    </div>
+
+    <div class="uebung" style="border-left: 4px solid var(--fcw-grau-mid);">
+      <h2>Hinweise</h2>
+      <p style="font-size: 0.85rem; color: #888;">Dieser Trainingsplan wurde mit Unterstützung von KI (Claude, Anthropic) erstellt und basiert auf allgemeinen Prinzipien der Juniorenfussball-Ausbildung.</p>
+    </div>
+
+  </div>
+
+  <footer class="footer">FC Wiedikon E2 &middot; Saison 2025/2026</footer>
+  <script src="../../js/uebung-nav.js"></script>
+</body>
+</html>

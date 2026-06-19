@@ -170,6 +170,12 @@ body {
   color: var(--fcw-weiss);
 }
 
+.badge-technik {
+  background: #edf4fc;
+  color: var(--fcw-blau);
+  border: 1px solid rgba(34,104,178,0.2);
+}
+
 .training-card-body {
   padding: 14px 18px;
 }
