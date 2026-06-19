@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCW E2 Trainingsplaner</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="apple-touch-icon" href="../img/FCW_logo.png">
+  <meta name="theme-color" content="#2268B2">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+
+  <header class="header">
+    <img src="../img/FCW_logo.png" alt="FC Wiedikon Logo">
+    <h1>Trainingsplaner<small>E2-Junioren 2025/2026</small></h1>
+  </header>
+
+  <nav class="filter-bar">
+    <button class="filter-btn active" data-section="alle">Alle</button>
+    <button class="filter-btn" data-section="grundsaetze">Grundsätze</button>
+    <button class="filter-btn" data-section="passspiel">Passspiel</button>
+    <button class="filter-btn" data-section="dribbling">Dribbling / 1v1</button>
+    <button class="filter-btn" data-section="torschuss">Torschuss</button>
+    <button class="filter-btn" data-section="spielaufbau">Spielaufbau</button>
+    <button class="filter-btn" data-section="verteidigen">Verteidigen</button>
+    <button class="filter-btn" data-section="kondition">Kondition</button>
+    <button class="filter-btn" data-section="spezial">Spezial</button>
+  </nav>
+
+  <!-- ===== GRUNDSÄTZE FÜR TRAINER ===== -->
+  <section id="grundsaetze" class="content">
+    <h2 class="section-title">Grundsätze für Trainer</h2>
+
+    <a class="training-card" href="trainings/tipps-aufmerksamkeit.html">
+      <div class="training-card-header" style="background: var(--fcw-rot);">
+        <h2>Aufmerksamkeit & Lernbereitschaft</h2>
+        <span class="badge badge-dauer">Leitfaden</span>
+      </div>
+      <div class="training-card-body">
+        <p>8 Prinzipien für bessere Konzentration im Training mit 10-11-Jährigen. Weniger reden, mehr zeigen, Wettbewerb nutzen.</p>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/tipps-probetraining.html">
+      <div class="training-card-header" style="background: var(--fcw-rot);">
+        <h2>Probetraining & Sichtung</h2>
+        <span class="badge badge-dauer">Leitfaden</span>
+      </div>
+      <div class="training-card-body">
+        <p>Sichtungstraining für 8 Spieler (5 Plätze). Fairer Aufbau mit Bewertungsbogen, 1v1-Turnier, 4v4 mit Team-Rotation und Torschuss-Challenge.</p>
+      </div>
+    </a>
+
+    <!-- Weitere Leitfäden hier ergänzen -->
+
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ===== TRAININGSEINHEITEN ===== -->
+  <main id="trainings" class="content">
+    <h2 class="section-title">Trainingseinheiten</h2>
+
+    <a class="training-card" href="trainings/spielaufbau-positionen.html" data-thema="spielaufbau">
+      <div class="training-card-header">
+        <span class="training-nr">S-1</span>
+        <h2>Spielaufbau & Positionen</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Freilaufen, Dreiecke bilden, Zonenspiel – vom Aufwärmen bis zum Abschlussspiel mit Doppeltor-Bonus.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Spielaufbau</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/spielaufbau-spieleroeffnung.html" data-thema="spielaufbau">
+      <div class="training-card-header">
+        <span class="training-nr">S-2</span>
+        <h2>Spieleröffnung & Erster Pass</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Vom Torwart rausspielen statt bolzen. Pass-Tore, Spieleröffnung 3v1, Aufbau mit Aufbauzone und Doppeltor-Bonus.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Spielaufbau</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/spielaufbau-fluegelspiel.html" data-thema="spielaufbau">
+      <div class="training-card-header">
+        <span class="training-nr">S-3</span>
+        <h2>Flügelspiel & Seitenwechsel</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Die Breite des Feldes nutzen. Seitenwechsel-Staffel, Flügel 2v1 mit Hereingabe, Spiel mit Flügelzonen.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Spielaufbau</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/spielaufbau-ueberzahl.html" data-thema="spielaufbau">
+      <div class="training-card-header">
+        <span class="training-nr">S-4</span>
+        <h2>Überzahl im Aufbau</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Den freien Mann finden. Rondo 4v1, 3 gegen 2 auf Minitore, Joker-Spiel mit permanenter Überzahl.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Spielaufbau</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/spielaufbau-umschalten.html" data-thema="spielaufbau">
+      <div class="training-card-header">
+        <span class="training-nr">S-5</span>
+        <h2>Schnelles Umschalten</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Nach Ballgewinn sofort angreifen. Farben-Reaktion, Balleroberung mit Konter 3v3, 8-Sekunden-Doppeltor-Regel.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Spielaufbau</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/spielaufbau-kombinieren.html" data-thema="spielaufbau">
+      <div class="training-card-header">
+        <span class="training-nr">S-6</span>
+        <h2>Kombinieren im Zentrum</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Doppelpass als Waffe. Doppelpass-Parcours, Wandspiel 2v1, Zentrumsspiel mit Passzone.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Spielaufbau</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/verteidigen-1gegen1.html" data-thema="verteidigen">
+      <div class="training-card-header">
+        <span class="training-nr">V-1</span>
+        <h2>Verteidigen im 1 gegen 1</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Geduldig bleiben, nicht reingrätschten. Schatten-Spiel, 1v1 auf Linie, Konterzonen-Spiel mit Zweikampf-Bonus.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Verteidigen</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/verteidigen-verschieben.html" data-thema="verteidigen">
+      <div class="training-card-header">
+        <span class="training-nr">V-2</span>
+        <h2>Verschieben & Zusammenrücken</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Als Team verteidigen. Ketten-Fangen, Viererkette verschieben, Kompaktheits-Spiel mit Freeze-Regel.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Verteidigen</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/verteidigen-pressing.html" data-thema="verteidigen">
+      <div class="training-card-header">
+        <span class="training-nr">V-3</span>
+        <h2>Pressing & Anlaufen</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Im richtigen Moment attackieren. Ball-Jagd, Pressing-Auslöser erkennen, Zonen-Pressing mit Doppeltor-Bonus.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Verteidigen</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/verteidigen-absichern.html" data-thema="verteidigen">
+      <div class="training-card-header">
+        <span class="training-nr">V-4</span>
+        <h2>Absichern & Doppeln</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Zu zweit verteidigen. Paar-Fangen, 2v1-Absicherung mit Rollenverteilung, Doppeln am Rand im Spiel.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Verteidigen</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/verteidigen-balleroberung.html" data-thema="verteidigen">
+      <div class="training-card-header">
+        <span class="training-nr">V-5</span>
+        <h2>Balleroberung & Umschalten</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Erobern und sofort angreifen. Ball-Klau-Spiel, Konter nach Ballgewinn, Eroberungs-Spiel mit 6-Sekunden-Regel.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Verteidigen</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/torschuss-schusstechnik.html" data-thema="torschuss">
+      <div class="training-card-header">
+        <span class="training-nr">T-1</span>
+        <h2>Schusstechnik & Zielschuss</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Platzieren statt draufhauen. Hütchen-Kegeln, Innenseite/Vollspann/Dribbling-Stationen, Zielschuss-Wettbewerb.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Torschuss</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/torschuss-zuspiel.html" data-thema="torschuss">
+      <div class="training-card-header">
+        <span class="training-nr">T-2</span>
+        <h2>Abschluss nach Zuspiel</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Erster Kontakt in Schussposition. Pass-und-Schuss-Staffel, Abschluss aus 3 Positionen, Flanke & Verwertung.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Torschuss</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/torschuss-unter-druck.html" data-thema="torschuss">
+      <div class="training-card-header">
+        <span class="training-nr">T-3</span>
+        <h2>Torschuss unter Druck</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Schnell schiessen, bevor der Gegner da ist. Countdown-Schuss, Abschluss mit Verfolger, 2v1 mit Zeitlimit.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Torschuss</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/torschuss-direktabschluss.html" data-thema="torschuss">
+      <div class="training-card-header">
+        <span class="training-nr">T-4</span>
+        <h2>Direktabschluss & Volley</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Ball direkt aus der Luft nehmen. Jonglier-Challenge, Volley-Stationen, Direkt-Tor-Spiel mit Kontakt-Limit.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Torschuss</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/torschuss-eins-gegen-torwart.html" data-thema="torschuss">
+      <div class="training-card-header">
+        <span class="training-nr">T-5</span>
+        <h2>Eins gegen Torwart</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Die Königsdisziplin. Dribbel-Parcours, 3 Varianten (Lupfer, flach, umdribbeln), Konter-Spiel mit Alleingang-Bonus.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Torschuss</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/passspiel-technik.html" data-thema="passspiel">
+      <div class="training-card-header">
+        <span class="training-nr">P-1</span>
+        <h2>Passgenauigkeit & Technik</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Platziert passen statt hoffen. Hütchen-Kegeln, 3 Passarten an Stationen, Pass-Tor-Spiel mit Hütchentoren.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Passspiel</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/passspiel-dreieck.html" data-thema="passspiel">
+      <div class="training-card-header">
+        <span class="training-nr">P-2</span>
+        <h2>Passspiel im Dreieck</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Immer 2 Anspielstationen bieten. Dreieck-Passen, Rondo mit Dreiecks-Regel, Freeze-Spiel.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Passspiel</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/passspiel-doppelpass.html" data-thema="passspiel">
+      <div class="training-card-header">
+        <span class="training-nr">P-3</span>
+        <h2>Doppelpass & Wandspiel</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Pass und Sprint. Doppelpass-Parcours, Wandspiel 2v1 auf Bahnen, Doppelpass-Tor-Spiel.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Passspiel</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/passspiel-verlagerung.html" data-thema="passspiel">
+      <div class="training-card-header">
+        <span class="training-nr">P-4</span>
+        <h2>Langer Ball & Verlagerung</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Die freie Seite finden. Langer-Ball-Wettbewerb, Verlagerung über den Dritten, Seitenwechsel-Spiel.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Passspiel</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/passspiel-unter-druck.html" data-thema="passspiel">
+      <div class="training-card-header">
+        <span class="training-nr">P-5</span>
+        <h2>Passspiel unter Druck</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Schnell denken, sauber passen. Farben-Pass, Rondo unter Druck, Überzahl-Aufbauspiel mit Kontaktlimit.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Passspiel</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/dribbling-ballfuehrung.html" data-thema="dribbling">
+      <div class="training-card-header">
+        <span class="training-nr">D-1</span>
+        <h2>Ballführung & Enge Räume</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Ball eng am Fuss halten. Verkehrs-Dribbling, Ballführungs-Parcours, Feld-Behauptung gegen Jäger.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Dribbling / 1v1</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/dribbling-finten.html" data-thema="dribbling">
+      <div class="training-card-header">
+        <span class="training-nr">D-2</span>
+        <h2>Finten & Körpertäuschung</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Gegner in die falsche Richtung locken. 3 Finten lernen, gegen halbaktiven Verteidiger üben, Finten-Spiel.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Dribbling / 1v1</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/dribbling-1v1-frontal.html" data-thema="dribbling">
+      <div class="training-card-header">
+        <span class="training-nr">D-3</span>
+        <h2>1 gegen 1 frontal</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Verteidiger direkt ausspielen. Spiegel-Dribbling, 1v1 auf Hütchentore, 1v1-Turnier mit Aufstieg.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Dribbling / 1v1</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/dribbling-drehen-abschirmen.html" data-thema="dribbling">
+      <div class="training-card-header">
+        <span class="training-nr">D-4</span>
+        <h2>Drehen & Abschirmen</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Gegner im Rücken. Cruyff-Turn, Sohlenzieher, Körper-Drehung, Rückraum-Spiel mit Zielspieler.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Dribbling / 1v1</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/dribbling-wann-dribbeln.html" data-thema="dribbling">
+      <div class="training-card-header">
+        <span class="training-nr">D-5</span>
+        <h2>Wann dribbeln, wann passen?</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Die richtige Entscheidung treffen. Farben-Entscheidung, 2v1 mit Lese-Aufgabe, Dribbelzonen im Spiel.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Dribbling / 1v1</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/kondition-ausdauer.html" data-thema="kondition">
+      <div class="training-card-header">
+        <span class="training-nr">K-1</span>
+        <h2>Ausdauer mit Ball</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Laufen mit Ball statt ohne. Dribbel-Lauf, Pendel-Staffel, Dauerlauf-Spiel mit kurzen intensiven Runden.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Kondition</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/kondition-sprints.html" data-thema="kondition">
+      <div class="training-card-header">
+        <span class="training-nr">K-2</span>
+        <h2>Schnelligkeit & Antritt</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Explosiv lossprinten. Reaktions-Sprints, Sprint-Wettkämpfe mit Ball, Sprint-Spiel mit Kontertoren.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Kondition</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/kondition-richtungswechsel.html" data-thema="kondition">
+      <div class="training-card-header">
+        <span class="training-nr">K-3</span>
+        <h2>Richtungswechsel & Wendigkeit</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Bremsen, Wenden, Beschleunigen. Fangen mit Richtungswechsel, Agilitäts-Parcours, Wende-Spiel.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Kondition</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/kondition-koordination.html" data-thema="kondition">
+      <div class="training-card-header">
+        <span class="training-nr">K-4</span>
+        <h2>Koordination & Gleichgewicht</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Bewegungsmuster und Balance. Koordinations-Kreis, Parcours mit Abschluss, Gleichgewicht-Spiel.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Kondition</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/kondition-spielfitness.html" data-thema="kondition">
+      <div class="training-card-header">
+        <span class="training-nr">K-5</span>
+        <h2>Spielfitness & Belastung</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Fit wie im Spiel. Intervall-Dribbling, Spielform-Zirkel mit Kraftübungen, Marathonspiel.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Kondition</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/spezial-zusammenspiel.html" data-thema="spezial">
+      <div class="training-card-header">
+        <span class="training-nr">X-1</span>
+        <h2>Zusammenspiel &amp; Doppelpass</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Doppelpass als Waffe. 6v7 Ballbesitz, Rondo, Doppelpass-Parcours, Spiel auf halbes Feld mit Doppelpass-Bonus.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Spezial</span>
+          <span>13 Spieler</span>
+          <span>Verwendet: 05.06.2026</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/spezial-saisonabschluss.html" data-thema="spezial">
+      <div class="training-card-header">
+        <span class="training-nr">X-2</span>
+        <h2>Saisonabschluss-Spass</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Letztes Training der Saison! Flaschen-Kegeln, Trick-Shot-Challenge, Fussball ohne Worte, Mini-WM &amp; Elfmeterkönig. Hitze-Modus mit vielen Pausen.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Spezial</span>
+          <span>13 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- TEMPLATE: Neues Training hinzufügen
+    <a class="training-card" href="trainings/DATEINAME.html" data-thema="THEMA">
+      <div class="training-card-header">
+        <span class="training-nr">X-NR</span>
+        <h2>TITEL</h2>
+        <span class="badge badge-dauer">DAUER Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>KURZBESCHREIBUNG</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">THEMA</span>
+          <span>SPIELERANZAHL Spieler</span>
+          <span>Verwendet: TT.MM.JJJJ</span>
+        </div>
+      </div>
+    </a>
+    Themen: passspiel, dribbling, torschuss, spielaufbau, verteidigen, kondition
+    -->
+
+    <div id="empty-state" class="empty-state" style="display: none;">
+      <p>Keine Trainings in dieser Kategorie vorhanden.</p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    FC Wiedikon E2 &middot; Saison 2025/2026
+  </footer>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

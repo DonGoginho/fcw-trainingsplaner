@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCW D7b Trainingsplaner</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="apple-touch-icon" href="../img/FCW_logo.png">
+  <meta name="theme-color" content="#2268B2">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+
+  <header class="header">
+    <img src="../img/FCW_logo.png" alt="FC Wiedikon Logo">
+    <h1>Trainingsplaner<small>D7b-Junioren 2026/2027</small></h1>
+  </header>
+
+  <nav class="filter-bar">
+    <button class="filter-btn active" data-section="alle">Alle</button>
+    <button class="filter-btn" data-section="ballbesitz">Ballbesitz</button>
+    <button class="filter-btn" data-section="verteidigen">Verteidigen</button>
+    <button class="filter-btn" data-section="erobern">Ball erobern</button>
+    <button class="filter-btn" data-section="gegenpressing">Gegenpressing</button>
+    <button class="filter-btn" data-section="athletik">Athletik</button>
+    <button class="filter-btn" data-section="team">Team</button>
+  </nav>
+
+  <main id="trainings" class="content">
+    <h2 class="section-title">Trainingseinheiten</h2>
+
+    <a class="training-card" href="trainings/team-ankommen.html" data-thema="team">
+      <div class="training-card-header">
+        <span class="training-nr">T-1</span>
+        <h2>Ankommen & Kennenlernen</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Erstes Training mit neuem Team. Kennenlernen, Beobachten, viel freies Spiel. Wer kann was? Wie tickt die Gruppe?</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Team</span>
+          <span>14-16 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/team-regeln.html" data-thema="team">
+      <div class="training-card-header">
+        <span class="training-nr">T-2</span>
+        <h2>Gemeinsam Regeln setzen</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>3 Team-Regeln gemeinsam erarbeiten. Technische Einschätzung der Spieler. Fairplay-Spiele mit Selbstregulation.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Team</span>
+          <span>14-16 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/team-staerken.html" data-thema="team">
+      <div class="training-card-header">
+        <span class="training-nr">T-3</span>
+        <h2>Stärken entdecken</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Stationen-Training: Technik, Schnelligkeit, Spielverständnis. Individuelle Stärken sichtbar machen und wertschätzen.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Team</span>
+          <span class="badge badge-technik">Technik-Check</span>
+          <span>14-16 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="training-card" href="trainings/ballbesitz-zusammenspiel.html" data-thema="ballbesitz">
+      <div class="training-card-header">
+        <span class="training-nr">O-1</span>
+        <h2>Zusammen spielen</h2>
+        <span class="badge badge-dauer">90 Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>Erstes taktisches Training: Zusammenspiel im 9er. Freilaufen, Anspielstationen bieten, Breite und Tiefe nutzen.</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">Ballbesitz</span>
+          <span class="badge badge-technik">Passspiel</span>
+          <span>14-16 Spieler</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- TEMPLATE: Neues Training hinzufügen
+    <a class="training-card" href="trainings/DATEINAME.html" data-thema="THEMA">
+      <div class="training-card-header">
+        <span class="training-nr">X-NR</span>
+        <h2>TITEL</h2>
+        <span class="badge badge-dauer">DAUER Min</span>
+      </div>
+      <div class="training-card-body">
+        <p>KURZBESCHREIBUNG</p>
+        <div class="training-card-meta">
+          <span class="badge badge-thema">SPIELPHASE</span>
+          <span class="badge badge-technik">TECHNIK</span>
+          <span>SPIELERANZAHL Spieler</span>
+          <span>Verwendet: TT.MM.JJJJ</span>
+        </div>
+      </div>
+    </a>
+    Spielphasen: ballbesitz, verteidigen, erobern, gegenpressing, athletik, team
+    Technik-Labels (optional): Passspiel, Dribbling, Torschuss, Kopfball, Ballkontrolle, Technik-Check
+    -->
+
+    <div id="empty-state" class="empty-state" style="display: none;">
+      <p>Keine Trainings in dieser Kategorie vorhanden.</p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    FC Wiedikon D7b &middot; Saison 2026/2027
+  </footer>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
