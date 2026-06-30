@@ -1,30 +1,40 @@
-# FCW E2 Trainingsplaner
+# FCW Trainingsplaner
 
-Mobile-first Website für die Trainingsplanung der **E2-Junioren**, Saison 2025/2026.
+Mobile-first Website für die Trainingsplanung beim **FC Wiedikon**. Optimiert für Smartphone am Spielfeldrand.
+
+## Aktive Saison
+
+**D7b-Junioren 2026/2027** — 9er-Fussball, 12 Spieler (Jahrgang 2014/2015)
+
+### Trainingsbestand D7b
+
+| Nr | Titel | Kategorie | Datei |
+|---|---|---|---|
+| T-1 | Ankommen & Kennenlernen | Team | `team-ankommen.html` |
+| T-2 | Gemeinsam Regeln setzen | Team | `team-regeln.html` |
+| T-3 | Stärken entdecken | Team | `team-staerken.html` |
+| O-1 | Zusammen spielen | Ballbesitz | `ballbesitz-zusammenspiel.html` |
+| A-1 | Schnelligkeit & Reaktion | Athletik | `athletik-schnelligkeit.html` |
+| A-2 | Koordination & Wendigkeit | Athletik | `athletik-koordination.html` |
+| A-3 | Ausdauer durch Spielformen | Athletik | `athletik-ausdauer.html` |
+| A-4 | Rumpfstabilität & Zweikampfkraft | Athletik | `athletik-zweikampf.html` |
+
+## Archiv
+
+**E2-Junioren 2025/2026** — 7er-Fussball, 13 Spieler. 32 Trainingseinheiten + 2 Coaching-Leitfäden. Erreichbar via Footer-Link auf der D7b-Startseite.
 
 ## Features
 
-- **6 Trainingseinheiten** zum Thema Spielaufbau mit SVG-Übungsskizzen
-- **Coaching-Leitfaden** (Aufmerksamkeit & Lernbereitschaft)
-- **Themenfilter** auf der Startseite (Spielaufbau, Passspiel, Dribbling, etc.)
+- **Spielphasen-Filter** (Ballbesitz, Verteidigen, Erobern, Gegenpressing, Athletik, Team)
+- **SVG-Übungsskizzen** inline in jeder Trainingseinheit
 - **Sticky-Navigation** am unteren Bildschirmrand zum Blättern zwischen Übungen
 - **Mobile-optimiert** für die Nutzung am Spielfeldrand
 - **Druckbar** mit sauberem Print-Layout
-
-## Trainings
-
-| # | Titel | Schwerpunkt |
-|---|---|---|
-| 1 | Spielaufbau & Positionen | Dreiecke bilden, Zonenspiel, Freilaufen |
-| 2 | Spieleröffnung & Erster Pass | Vom Torwart rausspielen, Aufbauzone |
-| 3 | Flügelspiel & Seitenwechsel | Breite nutzen, Flügelzonen, Hereingaben |
-| 4 | Überzahl im Aufbau | Freien Mann finden, Rondo, Joker-Spiel |
-| 5 | Schnelles Umschalten | Balleroberung → Konter, 8-Sekunden-Regel |
-| 6 | Kombinieren im Zentrum | Doppelpass, Wandspiel, Passzone |
+- **Home-Screen App** via Web-App Manifest (FCW-Logo als Icon)
 
 ## Technik
 
-Reines HTML/CSS/JS – kein Framework, kein Build-Tool. Einfach `index.html` im Browser öffnen oder via GitHub Pages hosten.
+Reines HTML/CSS/JS — kein Framework, kein Build-Tool. Einfach `index.html` im Browser öffnen oder via GitHub Pages hosten.
 
 ## GitHub Pages
 
@@ -35,5 +45,5 @@ Reines HTML/CSS/JS – kein Framework, kein Build-Tool. Einfach `index.html` im 
 
 ## Lizenz
 
-Erstellt für den internen Gebrauch des FCW E2-Trainerteams.
+Erstellt für den internen Gebrauch des FC Wiedikon Trainerteams.
 Trainingskonzepte mit Unterstützung von KI (Claude, Anthropic).
