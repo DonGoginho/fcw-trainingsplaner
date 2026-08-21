@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D7-Regeln – FCW D7b</title>
+  <meta name="thema" content="regeln">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="apple-touch-icon" href="../../img/FCW_logo.png">
+  <meta name="theme-color" content="#2268B2">
+  <style>
+    .regel-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 12px 0;
+    }
+    @media (max-width: 500px) {
+      .regel-grid { grid-template-columns: 1fr; }
+    }
+    .regel-karte {
+      background: var(--fcw-grau);
+      border-radius: 8px;
+      padding: 12px 14px;
+      text-align: center;
+    }
+    .regel-karte .label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #888;
+      margin-bottom: 2px;
+    }
+    .regel-karte .wert {
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: var(--fcw-blau);
+    }
+    .regel-karte .detail {
+      font-size: 0.78rem;
+      color: #666;
+      margin-top: 2px;
+    }
+    .std-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin: 10px 0;
+    }
+    .std-table th {
+      background: var(--fcw-blau);
+      color: #fff;
+      padding: 9px 12px;
+      text-align: left;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    .std-table td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--fcw-grau-mid);
+      vertical-align: top;
+    }
+    .std-table tr:last-child td { border-bottom: none; }
+    .std-table .sit { font-weight: 700; white-space: nowrap; }
+    .num-badge {
+      display: inline-block;
+      background: var(--fcw-blau);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.82rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .warn-box {
+      background: #fdecea;
+      border-left: 4px solid var(--fcw-rot);
+      border-radius: 0 6px 6px 0;
+      padding: 10px 14px;
+      margin: 12px 0;
+      font-size: 0.88rem;
+    }
+    .warn-box strong { color: var(--fcw-rot); }
+    .ok-box {
+      background: #e8f5e9;
+      border-left: 4px solid #4caf50;
+      border-radius: 0 6px 6px 0;
+      padding: 10px 14px;
+      margin: 12px 0;
+      font-size: 0.88rem;
+    }
+    .ok-box strong { color: #2e7d32; }
+    .regel-liste {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+    .regel-liste li {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--fcw-grau-mid);
+      font-size: 0.9rem;
+    }
+    .regel-liste li:last-child { border-bottom: none; }
+    .regel-liste .icon { flex-shrink: 0; width: 22px; text-align: center; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <img src="../../img/FCW_logo.png" alt="FC Wiedikon Logo">
+    <h1>Trainingsplaner<small>D7b-Junioren 2026/2027</small></h1>
+  </header>
+
+  <a class="back-link" href="../index.html">&larr; Zur&uuml;ck</a>
+
+  <div class="training-detail">
+
+    <div class="meta-info">
+      <span class="badge badge-thema">Regeln</span>
+      <span class="badge" style="background: var(--fcw-blau); color: #fff;">D-7 Junioren</span>
+      <span class="badge" style="background: var(--fcw-grau-mid); color: #333;">FVRZ 2025/26</span>
+    </div>
+
+    <!-- Spielformat -->
+    <div class="uebung">
+      <h2>Spielformat</h2>
+      <div class="regel-grid">
+        <div class="regel-karte">
+          <div class="label">Spieler</div>
+          <div class="wert">7 vs 7</div>
+          <div class="detail">mind. 5 auf dem Feld</div>
+        </div>
+        <div class="regel-karte">
+          <div class="label">Spieldauer</div>
+          <div class="wert">4 &times; 20 Min</div>
+          <div class="detail">Pause 3 Min / Halbzeit 10 Min</div>
+        </div>
+        <div class="regel-karte">
+          <div class="label">Spielfeld</div>
+          <div class="wert">55&ndash;41 &times; 35&ndash;25 m</div>
+          <div class="detail">Tore 5 &times; 2 m</div>
+        </div>
+        <div class="regel-karte">
+          <div class="label">Ball</div>
+          <div class="wert">Gr&ouml;sse 4</div>
+          <div class="detail">ca. 360 g</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wechsel -->
+    <div class="uebung">
+      <h2>Wechsel</h2>
+      <ul class="regel-liste">
+        <li>
+          <span class="icon">&#x23F1;</span>
+          <span><strong>Nur in Viertelpausen</strong> wechseln (Ausnahme: Verletzung)</span>
+        </li>
+        <li>
+          <span class="icon">&#x2757;</span>
+          <span>Alle aufgef&uuml;hrten Spieler m&uuml;ssen <strong>mind. 2 Viertel</strong> spielen</span>
+        </li>
+        <li>
+          <span class="icon">&#x1F4CB;</span>
+          <span>Max. <strong>11 Spieler</strong> d&uuml;rfen eingesetzt werden</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Standardsituationen -->
+    <div class="uebung">
+      <h2>Standardsituationen</h2>
+      <div style="overflow-x: auto;">
+        <table class="std-table">
+          <thead>
+            <tr>
+              <th>Situation</th>
+              <th>Abstand</th>
+              <th>Ausf&uuml;hrung</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sit">Freistoss</td>
+              <td><span class="num-badge">7 m</span></td>
+              <td>Immer <strong>indirekt</strong> (alle Vergehen ausserhalb Strafraum)</td>
+            </tr>
+            <tr>
+              <td class="sit">Eckstoss</td>
+              <td><span class="num-badge">7 m</span></td>
+              <td>Flachpass, hoher Pass oder Dribbling &middot; Ball muss ruhig liegen</td>
+            </tr>
+            <tr>
+              <td class="sit">Einwurf</td>
+              <td><span class="num-badge">3 m</span></td>
+              <td>Hand, Flachpass oder Dribbling &middot; Ball muss ruhig liegen</td>
+            </tr>
+            <tr>
+              <td class="sit">Penalty</td>
+              <td><span class="num-badge">7.5 m</span></td>
+              <td>&ndash;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Einwurf Spezialregeln -->
+    <div class="uebung">
+      <h2>Einwurf &ndash; Spezialregeln</h2>
+      <div class="warn-box">
+        <strong>Kein direktes Tor</strong> aus Einwurf (Hand/Flachpass). Per Dribbling erst nach 2. Ballkontakt.
+      </div>
+      <div class="ok-box">
+        <strong>Kein Abseits</strong> bei Einwurf (Hand oder Flachpass).
+      </div>
+      <ul class="regel-liste">
+        <li>
+          <span class="icon">&#x26A0;</span>
+          <span><strong>Abseits m&ouml;glich</strong> beim Dribbling ab dem 2. Ballkontakt</span>
+        </li>
+        <li>
+          <span class="icon">&#x1F504;</span>
+          <span><strong>Fouleinwurf</strong> bei unkorrekter Ausf&uuml;hrung = Einwurf Gegner</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Torabstoss -->
+    <div class="uebung">
+      <h2>Torabstoss / Auskick</h2>
+      <ul class="regel-liste">
+        <li>
+          <span class="icon">&#x1F9E4;</span>
+          <span><strong>Abwurf aus den H&auml;nden</strong> innerhalb des Strafraums (&uuml;ber Mittellinie erlaubt)</span>
+        </li>
+        <li>
+          <span class="icon">&#x1F6AB;</span>
+          <span>Gegner m&uuml;ssen <strong>ausserhalb Strafraum</strong> bleiben</span>
+        </li>
+        <li>
+          <span class="icon">&#x1F6AB;</span>
+          <span>Ball auf Boden gelegt = <strong>nicht mehr aufnehmen</strong> (nur noch Fuss)</span>
+        </li>
+      </ul>
+      <div class="warn-box">
+        <strong>Volley, Dropkick, Abschlag = VERBOTEN</strong><br>
+        Strafe: Indirekter Freistoss auf der Mittellinie f&uuml;r den Gegner.
+      </div>
+    </div>
+
+    <!-- Abseits -->
+    <div class="uebung">
+      <h2>Abseits</h2>
+      <p>Gilt <strong>grunds&auml;tzlich wie im regul&auml;ren Fussball</strong>.</p>
+      <div class="ok-box">
+        <strong>Ausnahme:</strong> Bei Einwurf (Hand/Flachpass) kein Abseits. Beim Dribbling erst ab 2. Ballkontakt.
+      </div>
+      <p style="margin-top: 10px;"><strong>R&uuml;ckpassregel</strong> gilt.</p>
+    </div>
+
+    <!-- Ausrüstung & Disziplin -->
+    <div class="uebung">
+      <h2>Ausr&uuml;stung &amp; Disziplin</h2>
+      <ul class="regel-liste">
+        <li>
+          <span class="icon">&#x2705;</span>
+          <span><strong>Schienbeinschoner</strong> obligatorisch</span>
+        </li>
+        <li>
+          <span class="icon">&#x26D4;</span>
+          <span><strong>Stollenschuhe</strong> verboten</span>
+        </li>
+        <li>
+          <span class="icon">&#x26D4;</span>
+          <span><strong>Schmuck</strong> verboten</span>
+        </li>
+        <li>
+          <span class="icon">&#x1F7E1;</span>
+          <span><strong>Gelbe/rote Karten</strong> + Zeitstrafe <strong>10 Minuten</strong></span>
+        </li>
+        <li>
+          <span class="icon">&#x1F91D;</span>
+          <span><strong>Shakehands</strong> vor und nach dem Spiel obligatorisch</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Spielberechtigung -->
+    <div class="uebung">
+      <h2>Spielberechtigung</h2>
+      <ul class="regel-liste">
+        <li>
+          <span class="icon">&#x1F4C5;</span>
+          <span>Jahrg&auml;nge <strong>2013&ndash;2014</strong> (M&auml;dchen in Juniorenteams: ab 2012)</span>
+        </li>
+        <li>
+          <span class="icon">&#x2705;</span>
+          <span>&Auml;lterer E-Junioren-Jahrgang <strong>2015</strong> ist spielberechtigt (SFV-Bestimmung)</span>
+        </li>
+        <li>
+          <span class="icon">&#x1F4CB;</span>
+          <span><strong>Spielerkarten</strong> m&uuml;ssen ausgedruckt sein &ndash; visuelle Kontrolle vor jedem Spiel</span>
+        </li>
+        <li>
+          <span class="icon">&#x26D4;</span>
+          <span>Max. <strong>1 Wettspiel pro Tag</strong></span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Organisatorisches -->
+    <div class="uebung">
+      <h2>Organisatorisches</h2>
+      <ul class="regel-liste">
+        <li>
+          <span class="icon">&#x1F3A4;</span>
+          <span><strong>Spielleitung</strong> durch Heimklub (m&ouml;glichst ausgebildete Club Referees)</span>
+        </li>
+        <li>
+          <span class="icon">&#x1F4F1;</span>
+          <span><strong>Resultatmeldung</strong> am Spieltag via Clubcorner durch Heimklub</span>
+        </li>
+        <li>
+          <span class="icon">&#x1F4DD;</span>
+          <span><strong>Spielbericht</strong> innert 48 Stunden online im Clubcorner SFV</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Spielverschiebung -->
+    <div class="uebung">
+      <h2>Spielverschiebung</h2>
+      <ul class="regel-liste">
+        <li>
+          <span class="icon">&#x1F4C6;</span>
+          <span>Fr/Sa/So-Spiele: bis <strong>Do 12:00 Uhr</strong></span>
+        </li>
+        <li>
+          <span class="icon">&#x1F4C6;</span>
+          <span>Mo/Di-Spiele: bis <strong>Fr 12:00 Uhr</strong></span>
+        </li>
+        <li>
+          <span class="icon">&#x1F4C6;</span>
+          <span>Mi/Do-Spiele: bis <strong>Mo 12:00 Uhr</strong></span>
+        </li>
+        <li>
+          <span class="icon">&#x1F327;</span>
+          <span><strong>Witterungsbedingt:</strong> Meldung sp&auml;testens 4 Stunden vor Spielbeginn. Wenn Gegner spielbares Terrain hat &rarr; dort spielen.</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Quelle -->
+    <div class="uebung" style="border-left: 4px solid var(--fcw-grau-mid);">
+      <h2>Quelle</h2>
+      <p style="font-size: 0.85rem; color: #888;">FVRZ-Merkblatt Junioren/Juniorinnen D-7, Saison 2025/26 (Stand: Juli 2025).</p>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    FC Wiedikon D7b &middot; Saison 2026/2027
+  </footer>
+
+</body>
+</html>
