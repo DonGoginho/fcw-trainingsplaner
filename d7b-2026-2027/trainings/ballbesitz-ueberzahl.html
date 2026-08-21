@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O-4 Überzahl herausspielen – FCW D7b</title>
+  <meta name="thema" content="ballbesitz">
+  <meta name="dauer" content="90">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="manifest" href="../../manifest.json">
+  <link rel="apple-touch-icon" href="../../img/FCW_logo.png">
+  <meta name="theme-color" content="#2268B2">
+</head>
+<body>
+
+  <header class="header">
+    <img src="../../img/FCW_logo.png" alt="FC Wiedikon Logo">
+    <h1>Trainingsplaner<small>D7b-Junioren 2026/2027</small></h1>
+  </header>
+
+  <a class="back-link" href="../index.html">&larr; Zurück</a>
+
+  <div class="training-detail">
+
+    <div class="meta-info">
+      <span class="badge badge-thema">Ballbesitz</span>
+      <span class="badge badge-technik">Passspiel</span>
+      <span class="badge badge-technik">Dribbling</span>
+      <span class="badge" style="background: var(--fcw-blau); color: #fff;">90 Min</span>
+      <span class="badge" style="background: var(--fcw-grau-mid); color: #333;">12 Spieler</span>
+    </div>
+
+    <!-- Zeitübersicht -->
+    <div class="uebung">
+      <h2>Zeitübersicht</h2>
+      <table>
+        <tr><th>Phase</th><th>Dauer</th><th>Inhalt</th></tr>
+        <tr><td>Besammlung</td><td>3 Min</td><td>Tagesregel: "Doppelpass!"</td></tr>
+        <tr><td>Aufwärmen</td><td>12 Min</td><td>Doppelpass-Stafette</td></tr>
+        <tr><td>Hauptteil A</td><td>20 Min</td><td>2v1 und 3v2 Wellen</td></tr>
+        <tr><td>Pause</td><td>3 Min</td><td>Trinken</td></tr>
+        <tr><td>Hauptteil B</td><td>22 Min</td><td>6v6 mit Joker-Zonen</td></tr>
+        <tr><td>Abschlussspiel</td><td>25 Min</td><td>6v6 mit Doppelpass-Bonus</td></tr>
+        <tr><td>Abschluss</td><td>5 Min</td><td>Feedback</td></tr>
+        <tr><td>Total</td><td>90 Min</td><td></td></tr>
+      </table>
+    </div>
+
+    <!-- Material -->
+    <div class="uebung">
+      <h2>Material</h2>
+      <ul>
+        <li>16 Hütchen</li>
+        <li>12 Markierungsteller</li>
+        <li>Leibchen (3 Farben)</li>
+        <li>Genug Bälle</li>
+        <li>2 grosse Tore + 2 Minitore</li>
+      </ul>
+    </div>
+
+    <!-- 1. Besammlung -->
+    <div class="uebung">
+      <h2>1. Besammlung (3 Min)</h2>
+      <blockquote>
+        "Heute: Doppelpass. Klatschen &ndash; laufen &ndash; Ball kriegen. Damit spielst du jeden Gegner aus. Tagesregel: Doppelpass &ndash; der schnellste Weg vorbei!"
+      </blockquote>
+    </div>
+
+    <!-- 2. Aufwärmen -->
+    <div class="uebung">
+      <h2>2. Aufwärmen: Doppelpass-Stafette (12 Min)</h2>
+      <p><strong>Ziel:</strong> Doppelpass-Timing, Passgenauigkeit, Laufbereitschaft</p>
+      <p><strong>Aufbau:</strong> 6 Paare. 2 Bahnen mit je 3 Hütchen-Toren (2m breit, Abstand 10m). Paar startet, spielt Doppelpass durch jedes Hütchentor.</p>
+
+      <div class="skizze">
+        <svg width="460" height="240" viewBox="0 0 460 240">
+          <rect x="10" y="10" width="440" height="90" rx="6" fill="rgba(76,175,80,0.3)" stroke="#4caf50" stroke-width="2"/>
+          <text x="230" y="115" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="bold">Bahn 1</text>
+          <rect x="10" y="130" width="440" height="90" rx="6" fill="rgba(76,175,80,0.3)" stroke="#4caf50" stroke-width="2"/>
+          <text x="230" y="235" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="bold">Bahn 2</text>
+          <!-- Hütchentore Bahn 1 -->
+          <polygon points="140,30 147,22 154,30" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <polygon points="140,70 147,62 154,70" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <polygon points="260,30 267,22 274,30" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <polygon points="260,70 267,62 274,70" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <polygon points="380,30 387,22 394,30" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <polygon points="380,70 387,62 394,70" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <!-- Spieler Bahn 1 -->
+          <circle cx="40" cy="35" r="14" fill="#2268B2"/><text x="40" y="40" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">A</text>
+          <circle cx="40" cy="65" r="14" fill="#2268B2"/><text x="40" y="70" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">B</text>
+          <circle cx="54" cy="32" r="6" fill="#fff" stroke="#333" stroke-width="1.5"/>
+          <!-- Doppelpass-Pfeile -->
+          <defs>
+            <marker id="arrowDP" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#FFD200"/>
+            </marker>
+            <marker id="arrowRun2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#90caf9"/>
+            </marker>
+          </defs>
+          <!-- Pass runter -->
+          <line x1="50" y1="40" x2="50" y2="56" stroke="#FFD200" stroke-width="2" marker-end="url(#arrowDP)"/>
+          <!-- Lauf -->
+          <path d="M54,35 Q90,25 130,35" fill="none" stroke="#90caf9" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrowRun2)"/>
+          <!-- Pass zurück -->
+          <line x1="60" y1="65" x2="125" y2="40" stroke="#FFD200" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowDP)"/>
+          <text x="90" y="18" fill="#90caf9" font-size="9" font-style="italic">Lauf!</text>
+          <!-- Hütchentore Bahn 2 -->
+          <polygon points="140,150 147,142 154,150" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <polygon points="140,190 147,182 154,190" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <polygon points="260,150 267,142 274,150" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <polygon points="260,190 267,182 274,190" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <polygon points="380,150 387,142 394,150" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <polygon points="380,190 387,182 394,190" fill="#FFD200" stroke="#333" stroke-width="1"/>
+          <circle cx="40" cy="155" r="14" fill="#2268B2"/>
+          <circle cx="40" cy="185" r="14" fill="#2268B2"/>
+        </svg>
+      </div>
+      <div class="legende">
+        <span><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#2268B2"/></svg> Spieler-Paar</span>
+        <span><svg width="20" height="10"><line x1="0" y1="5" x2="20" y2="5" stroke="#FFD200" stroke-width="2"/></svg> Pass</span>
+        <span><svg width="20" height="10"><line x1="0" y1="5" x2="20" y2="5" stroke="#90caf9" stroke-width="2" stroke-dasharray="4,2"/></svg> Laufweg</span>
+      </div>
+
+      <p><strong>Ablauf:</strong></p>
+      <ul>
+        <li>A passt zu B ("Klatschen"), läuft sofort hinter dem Hütchentor vorbei</li>
+        <li>B spielt direkt zurück durch das Hütchentor ("Ball kriegen")</li>
+        <li>Weiter zum nächsten Tor &ndash; Rollen tauschen bei jedem Tor</li>
+        <li>6 Paare, 3 Bahnen &ndash; je 2 Paare pro Bahn, direkt nacheinander</li>
+      </ul>
+      <p><strong>Coaching:</strong></p>
+      <ul>
+        <li>"Klatschen &ndash; SOFORT laufen &ndash; nicht abwarten!"</li>
+        <li>"Timing! Der Pass muss in den Lauf kommen"</li>
+        <li>"Scharfer, flacher Pass &ndash; kein Lob"</li>
+      </ul>
+      <p><strong>Steigerung nach 6 Min:</strong></p>
+      <ul>
+        <li>Tempo steigern &ndash; welches Paar schafft die 3 Tore am schnellsten?</li>
+        <li>Nur 1 Berührung (Direktspiel)</li>
+      </ul>
+    </div>
+
+    <!-- 3. Hauptteil A -->
+    <div class="uebung">
+      <h2>3. Hauptteil A: 2v1 und 3v2 in Wellen (20 Min)</h2>
+      <p><strong>Ziel:</strong> Überzahl erkennen und ausspielen, Entscheidungstraining</p>
+      <p><strong>Aufbau:</strong> Halbes 9er-Feld, 1 grosses Tor mit TW. Angreifer starten von der Mittellinie, Verteidiger rückt aus der 16er-Zone raus.</p>
+
+      <div class="skizze">
+        <svg width="400" height="340" viewBox="0 0 400 340">
+          <rect x="10" y="10" width="380" height="300" rx="6" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+          <!-- Tor -->
+          <rect x="150" y="5" width="100" height="12" rx="3" fill="#fff" stroke="#333" stroke-width="2"/>
+          <circle cx="200" cy="40" r="14" fill="#2268B2" stroke="#FFD200" stroke-width="2"/><text x="200" y="45" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">TW</text>
+          <!-- Startlinie -->
+          <line x1="10" y1="260" x2="390" y2="260" stroke="#fff" stroke-width="2" stroke-dasharray="6,4" opacity="0.4"/>
+          <text x="200" y="280" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10">Startlinie</text>
+          <!-- 2v1: Angreifer -->
+          <circle cx="140" cy="290" r="16" fill="#2268B2"/><text x="140" y="295" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">A1</text>
+          <circle cx="260" cy="290" r="16" fill="#2268B2"/><text x="260" y="295" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">A2</text>
+          <circle cx="152" cy="287" r="6" fill="#fff" stroke="#333" stroke-width="1.5"/>
+          <!-- Verteidiger -->
+          <circle cx="200" cy="140" r="16" fill="#D42027"/><text x="200" y="145" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">V</text>
+          <!-- Laufwege -->
+          <defs>
+            <marker id="arrowA2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#2268B2"/>
+            </marker>
+            <marker id="arrowDP2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#FFD200"/>
+            </marker>
+          </defs>
+          <!-- A1 dribbelt -->
+          <path d="M145,275 Q160,220 180,170" fill="none" stroke="#2268B2" stroke-width="2.5" marker-end="url(#arrowA2)"/>
+          <!-- Pass zu A2 -->
+          <line x1="178" y1="175" x2="240" y2="165" stroke="#FFD200" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowDP2)"/>
+          <!-- A2 läuft -->
+          <path d="M260,275 Q250,220 240,170" fill="none" stroke="#90caf9" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrowRun2)"/>
+          <!-- Rückpass -->
+          <line x1="238" y1="160" x2="195" y2="100" stroke="#FFD200" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowDP2)" opacity="0.5"/>
+          <!-- V rückt raus -->
+          <path d="M200,155 Q200,180 200,200" fill="none" stroke="#D42027" stroke-width="2" stroke-dasharray="4,3"/>
+          <text x="220" y="195" fill="#D42027" font-size="9" font-style="italic">V rückt raus</text>
+          <!-- Label -->
+          <text x="200" y="328" text-anchor="middle" fill="#555" font-size="11" font-style="italic">2v1: Doppelpass oder Dribbling?</text>
+        </svg>
+      </div>
+      <div class="legende">
+        <span><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#2268B2"/></svg> Angreifer</span>
+        <span><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#D42027"/></svg> Verteidiger</span>
+        <span><svg width="20" height="10"><line x1="0" y1="5" x2="20" y2="5" stroke="#FFD200" stroke-width="2" stroke-dasharray="4,2"/></svg> Pass</span>
+        <span><svg width="20" height="10"><line x1="0" y1="5" x2="20" y2="5" stroke="#90caf9" stroke-width="2" stroke-dasharray="4,2"/></svg> Laufweg</span>
+      </div>
+
+      <p><strong>Ablauf Runde 1 (10 Min): 2v1</strong></p>
+      <ul>
+        <li>2 Angreifer starten von der Mittellinie mit Ball</li>
+        <li>1 Verteidiger rückt aus der 16er-Zone raus</li>
+        <li>Angreifer entscheiden: Doppelpass, Dribbling oder Pass und Nachstossen</li>
+        <li>Abschluss auf grosses Tor mit TW</li>
+        <li>4 Gruppen à 3 Spieler (2 Angreifer + 1 Verteidiger), Rollen rotieren</li>
+      </ul>
+      <p><strong>Wartende:</strong> Doppelpass üben in Paaren (Klatschen &ndash; Laufen &ndash; Rückpass, frei im Raum).</p>
+      <p><strong>Ablauf Runde 2 (10 Min): 3v2</strong></p>
+      <ul>
+        <li>3 Angreifer gegen 2 Verteidiger</li>
+        <li>Mehr Optionen: Doppelpass, Verlagerung, oder 1v1</li>
+        <li>Angreifer müssen die Überzahl ERKENNEN und NUTZEN</li>
+      </ul>
+      <p><strong>Coaching:</strong></p>
+      <ul>
+        <li>"Klatschen &ndash; laufen &ndash; Ball kriegen! Nicht stehenbleiben!"</li>
+        <li>"Schau den Verteidiger an &ndash; wenn er auf dich zukommt, ist dein Partner frei"</li>
+        <li>"Nicht zu früh den Pass spielen &ndash; den Verteidiger erst binden"</li>
+      </ul>
+    </div>
+
+    <!-- 4. Pause -->
+    <div class="uebung">
+      <h2>4. Trinkpause (3 Min)</h2>
+      <p>Kurze Frage: "Wann spielt ihr den Doppelpass, wann dribbelt ihr lieber selbst?" Antworten sammeln.</p>
+    </div>
+
+    <!-- 5. Hauptteil B -->
+    <div class="uebung">
+      <h2>5. Hauptteil B: 6v6 mit Joker-Zonen (22 Min)</h2>
+      <p><strong>Ziel:</strong> Überzahl im Spiel herstellen und nutzen</p>
+      <p><strong>Aufbau:</strong> Feld ca. 50x35m, 2 grosse Tore mit Torwart. 4v4 + 2 TW + 2 neutrale Joker (je 1 pro Seitenzone).</p>
+
+      <div class="skizze">
+        <svg width="460" height="340" viewBox="0 0 460 340">
+          <rect x="10" y="10" width="440" height="300" rx="6" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+          <!-- Joker-Zonen -->
+          <rect x="10" y="10" width="50" height="300" fill="rgba(158,158,158,0.2)" stroke="none"/>
+          <rect x="400" y="10" width="50" height="300" fill="rgba(158,158,158,0.2)" stroke="none"/>
+          <text x="35" y="28" text-anchor="middle" fill="rgba(158,158,158,0.8)" font-size="9" font-weight="bold">Joker</text>
+          <text x="425" y="28" text-anchor="middle" fill="rgba(158,158,158,0.8)" font-size="9" font-weight="bold">Joker</text>
+          <!-- Tore -->
+          <rect x="185" y="5" width="90" height="10" rx="2" fill="#fff" stroke="#333" stroke-width="2"/>
+          <rect x="185" y="305" width="90" height="10" rx="2" fill="#fff" stroke="#333" stroke-width="2"/>
+          <!-- TW -->
+          <circle cx="230" cy="30" r="12" fill="#2268B2" stroke="#FFD200" stroke-width="2"/><text x="230" y="34" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">TW</text>
+          <circle cx="230" cy="290" r="12" fill="#FFD200" stroke="#333" stroke-width="1"/><text x="230" y="294" text-anchor="middle" fill="#333" font-size="9" font-weight="bold">TW</text>
+          <!-- Team Blau -->
+          <circle cx="140" cy="100" r="14" fill="#2268B2"/>
+          <circle cx="280" cy="110" r="14" fill="#2268B2"/>
+          <circle cx="180" cy="170" r="14" fill="#2268B2"/>
+          <circle cx="300" cy="190" r="14" fill="#2268B2"/>
+          <!-- Team Gelb -->
+          <circle cx="160" cy="140" r="14" fill="#FFD200"/>
+          <circle cx="310" cy="150" r="14" fill="#FFD200"/>
+          <circle cx="200" cy="220" r="14" fill="#FFD200"/>
+          <circle cx="270" cy="240" r="14" fill="#FFD200"/>
+          <!-- Joker links -->
+          <circle cx="35" cy="160" r="14" fill="#9e9e9e" stroke="#fff" stroke-width="2"/><text x="35" y="165" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">J</text>
+          <!-- Joker rechts -->
+          <circle cx="425" cy="160" r="14" fill="#9e9e9e" stroke="#fff" stroke-width="2"/><text x="425" y="165" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">J</text>
+          <!-- Passwege zu Joker -->
+          <defs>
+            <marker id="arrowJ" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#9e9e9e"/>
+            </marker>
+          </defs>
+          <line x1="168" y1="170" x2="50" y2="162" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowJ)"/>
+          <line x1="312" y1="190" x2="412" y2="165" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowJ)"/>
+          <text x="230" y="325" text-anchor="middle" fill="#555" font-size="11" font-style="italic">Joker spielen = Überzahl herstellen</text>
+        </svg>
+      </div>
+      <div class="legende">
+        <span><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#2268B2"/></svg> Team Blau (4+TW)</span>
+        <span><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#FFD200"/></svg> Team Gelb (4+TW)</span>
+        <span><svg width="16" height="16"><circle cx="8" cy="8" r="7" fill="#9e9e9e" stroke="#fff" stroke-width="1.5"/></svg> Joker (2)</span>
+      </div>
+
+      <p><strong>Regeln:</strong></p>
+      <ul>
+        <li>4v4 im Hauptfeld + je 1 neutraler Joker pro Seitenlinie</li>
+        <li>Joker spielt immer mit dem ballbesitzenden Team &rarr; 5v4 + Flankenposition</li>
+        <li>Joker darf nur in seiner Zone bleiben &ndash; max. 2 Berührungen</li>
+        <li>Tor nach Einbindung des Jokers = Doppeltor</li>
+      </ul>
+      <p><strong>Coaching:</strong></p>
+      <ul>
+        <li>"Nutzt die Joker! Die stehen immer frei &ndash; das ist eure Überzahl!"</li>
+        <li>"Nach dem Pass zum Joker &ndash; sofort nachrücken für den Rückpass"</li>
+        <li>Freeze nach 8 Min: "Wie oft habt ihr die Joker eingebunden? Mehr!"</li>
+      </ul>
+      <p><strong>Steigerung nach 12 Min:</strong></p>
+      <ul>
+        <li>Joker dürfen ins Feld einlaufen (nur 1 Berührung dort) &rarr; Überzahl noch deutlicher</li>
+        <li>Joker-Wechsel: Neue Spieler übernehmen die Joker-Rolle</li>
+      </ul>
+    </div>
+
+    <!-- 6. Abschlussspiel -->
+    <div class="uebung">
+      <h2>6. Abschlussspiel: 6v6 mit Doppelpass-Bonus (25 Min)</h2>
+      <p><strong>Ziel:</strong> Gelerntes anwenden, Doppelpass im freien Spiel</p>
+      <p><strong>Aufbau:</strong> Ganzes 9er-Feld, 2 grosse Tore mit Torwart. 5v5 + 2 Torwarte.</p>
+
+      <p><strong>Regeln:</strong></p>
+      <ul>
+        <li>Freies Spiel &ndash; keine Einschränkungen</li>
+        <li><strong>Doppelpass-Bonus:</strong> Tor nach einem Doppelpass (Klatschen &ndash; Lauf &ndash; Rückpass) = Doppeltor</li>
+        <li>Trainer erkennt und ruft: "Doppelpass! Zählt doppelt!"</li>
+      </ul>
+      <p><strong>Coaching:</strong></p>
+      <ul>
+        <li>Möglichst wenig eingreifen</li>
+        <li>"Schön kombiniert!" / "Klasse Doppelpass!"</li>
+        <li>Halbzeit nach 12 Min</li>
+        <li>Beobachten: Versuchen die Spieler Doppelpässe oder bleiben sie beim Dribbling?</li>
+      </ul>
+    </div>
+
+    <!-- 7. Abschluss -->
+    <div class="uebung">
+      <h2>7. Abschluss (5 Min)</h2>
+      <ul>
+        <li>"Tagesregel?" &rarr; "Doppelpass &ndash; der schnellste Weg vorbei"</li>
+        <li>"Klatschen &ndash; laufen &ndash; Ball kriegen. Der Ball ist schneller als ihr!"</li>
+      </ul>
+      <p>Material aufräumen.</p>
+    </div>
+
+    <!-- Hinweise -->
+    <div class="uebung" style="border-left: 4px solid var(--fcw-grau-mid);">
+      <h2>Hinweise</h2>
+      <p style="font-size: 0.85rem; color: #888;">Dieser Trainingsplan wurde mit Unterstützung von KI (Claude, Anthropic) erstellt. Überzahl-Konzepte basieren auf dem J+S Manual Fussball Jugendliche (Spielphase "Wir haben den Ball": Überzahl erkennen und nutzen, Kombinationsspiel, Doppelpass als taktisches Mittel).</p>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    FC Wiedikon D7b &middot; Saison 2026/2027
+  </footer>
+
+  <script src="../../js/uebung-nav.js"></script>
+</body>
+</html>
