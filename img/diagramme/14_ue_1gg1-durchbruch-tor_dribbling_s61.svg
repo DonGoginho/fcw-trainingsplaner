@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Inter, sans-serif">
+  <title>Übung: 1 gegen 1 mit Durchbruch auf das Tor</title>
+  <desc>Manual Fussball Jugendliche, Seite 61 – Übung zum Themenbereich «1. Ballkontakt und Dribbling»</desc>
+
+  <defs>
+    <!-- Pfeilspitzen -->
+    <marker id="m-ball" markerWidth="9" markerHeight="7" refX="8.5" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 L1.6,3.5Z" fill="#2F5D14"/>
+    </marker>
+    <marker id="m-lauf" markerWidth="9" markerHeight="7" refX="8.5" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 L1.6,3.5Z" fill="#1F3D0D"/>
+    </marker>
+    <marker id="m-dribb" markerWidth="9" markerHeight="7" refX="8.5" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 L1.6,3.5Z" fill="#2F5D14"/>
+    </marker>
+
+    <!-- Spielerfigur ROT (Angriff) -->
+    <g id="pRed">
+      <path d="M0,-21.2a2.7,2.7 0 0 1 2.7,2.7h-5.4a2.7,2.7 0 0 1 2.7,-2.7z" fill="#31241A"/>
+      <circle cx="0" cy="-18.2" r="2.7" fill="#E0AE7E"/>
+      <path d="M-3.6,-15.4q3.6,-1.7 7.2,0l0.5,7.3h-8.2z" fill="#D2232A"/>
+      <path d="M-3.7,-15.2l-2.3,5.7 1.7,0.7 2.3,-5.1z" fill="#D2232A"/>
+      <path d="M3.7,-15.2l2.3,5.7 -1.7,0.7 -2.3,-5.1z" fill="#D2232A"/>
+      <path d="M-3.4,-8.1h6.8l0.3,4.2h-7.4z" fill="#FFFFFF"/>
+      <rect x="-2.9" y="-4.1" width="2.2" height="4.1" fill="#E0AE7E"/>
+      <rect x="0.7" y="-4.1" width="2.2" height="4.1" fill="#E0AE7E"/>
+      <rect x="-3.2" y="-0.4" width="2.8" height="1.1" rx="0.4" fill="#2B2B2B"/>
+      <rect x="0.4" y="-0.4" width="2.8" height="1.1" rx="0.4" fill="#2B2B2B"/>
+    </g>
+
+    <!-- Spielerfigur WEISS (Abwehr) -->
+    <g id="pWhite">
+      <path d="M0,-21.2a2.7,2.7 0 0 1 2.7,2.7h-5.4a2.7,2.7 0 0 1 2.7,-2.7z" fill="#31241A"/>
+      <circle cx="0" cy="-18.2" r="2.7" fill="#E0AE7E"/>
+      <path d="M-3.6,-15.4q3.6,-1.7 7.2,0l0.5,7.3h-8.2z" fill="#FFFFFF" stroke="#B9B9B9" stroke-width="0.3"/>
+      <path d="M-3.7,-15.2l-2.3,5.7 1.7,0.7 2.3,-5.1z" fill="#FFFFFF" stroke="#B9B9B9" stroke-width="0.3"/>
+      <path d="M3.7,-15.2l2.3,5.7 -1.7,0.7 -2.3,-5.1z" fill="#FFFFFF" stroke="#B9B9B9" stroke-width="0.3"/>
+      <path d="M-3.4,-8.1h6.8l0.3,4.2h-7.4z" fill="#FFFFFF" stroke="#B9B9B9" stroke-width="0.3"/>
+      <rect x="-2.9" y="-4.1" width="2.2" height="4.1" fill="#E0AE7E"/>
+      <rect x="0.7" y="-4.1" width="2.2" height="4.1" fill="#E0AE7E"/>
+      <rect x="-3.2" y="-0.4" width="2.8" height="1.1" rx="0.4" fill="#2B2B2B"/>
+      <rect x="0.4" y="-0.4" width="2.8" height="1.1" rx="0.4" fill="#2B2B2B"/>
+    </g>
+
+    <!-- Spielerfigur WEISS im Lauf -->
+    <g id="pWhiteRun">
+      <path d="M0,-21.2a2.7,2.7 0 0 1 2.7,2.7h-5.4a2.7,2.7 0 0 1 2.7,-2.7z" fill="#31241A"/>
+      <circle cx="0" cy="-18.2" r="2.7" fill="#E0AE7E"/>
+      <path d="M-3.6,-15.4q3.6,-1.7 7.2,0l0.5,7.3h-8.2z" fill="#FFFFFF" stroke="#B9B9B9" stroke-width="0.3"/>
+      <path d="M-3.7,-15.4l-4.3,4.2 1.4,1.4 4.1,-3.6z" fill="#FFFFFF" stroke="#B9B9B9" stroke-width="0.3"/>
+      <path d="M3.7,-15.2l3.6,4.9 -1.6,1.1 -3.4,-4.3z" fill="#FFFFFF" stroke="#B9B9B9" stroke-width="0.3"/>
+      <path d="M-3.4,-8.1h6.8l0.3,4.0h-7.4z" fill="#FFFFFF" stroke="#B9B9B9" stroke-width="0.3"/>
+      <path d="M-3.0,-4.3l-2.6,3.6 1.9,1.3 2.9,-4.0z" fill="#E0AE7E"/>
+      <path d="M1.0,-4.3l2.9,3.3 -1.7,1.5 -3.2,-3.7z" fill="#E0AE7E"/>
+      <rect x="-6.2" y="-1.4" width="2.8" height="1.1" rx="0.4" transform="rotate(-32 -4.8 -0.9)" fill="#2B2B2B"/>
+      <rect x="3.0" y="-1.0" width="2.8" height="1.1" rx="0.4" transform="rotate(38 4.4 -0.5)" fill="#2B2B2B"/>
+    </g>
+
+    <!-- Spielerfigur ROT im Lauf (dribbelnd) -->
+    <g id="pRedRun">
+      <path d="M0,-21.2a2.7,2.7 0 0 1 2.7,2.7h-5.4a2.7,2.7 0 0 1 2.7,-2.7z" fill="#31241A"/>
+      <circle cx="0" cy="-18.2" r="2.7" fill="#E0AE7E"/>
+      <path d="M-3.6,-15.4q3.6,-1.7 7.2,0l0.5,7.3h-8.2z" fill="#D2232A"/>
+      <path d="M-3.7,-15.4l-4.3,4.2 1.4,1.4 4.1,-3.6z" fill="#D2232A"/>
+      <path d="M3.7,-15.2l3.6,4.9 -1.6,1.1 -3.4,-4.3z" fill="#D2232A"/>
+      <path d="M-3.4,-8.1h6.8l0.3,4.0h-7.4z" fill="#FFFFFF"/>
+      <path d="M-3.0,-4.3l-2.6,3.6 1.9,1.3 2.9,-4.0z" fill="#E0AE7E"/>
+      <path d="M1.0,-4.3l2.9,3.3 -1.7,1.5 -3.2,-3.7z" fill="#E0AE7E"/>
+      <rect x="-6.2" y="-1.4" width="2.8" height="1.1" rx="0.4" transform="rotate(-32 -4.8 -0.9)" fill="#2B2B2B"/>
+      <rect x="3.0" y="-1.0" width="2.8" height="1.1" rx="0.4" transform="rotate(38 4.4 -0.5)" fill="#2B2B2B"/>
+    </g>
+
+    <!-- Torhüter GELB -->
+    <g id="pGK">
+      <path d="M0,-21.2a2.7,2.7 0 0 1 2.7,2.7h-5.4a2.7,2.7 0 0 1 2.7,-2.7z" fill="#31241A"/>
+      <circle cx="0" cy="-18.2" r="2.7" fill="#E0AE7E"/>
+      <path d="M-3.6,-15.4q3.6,-1.7 7.2,0l0.5,7.3h-8.2z" fill="#EFD81C"/>
+      <path d="M-3.7,-15.2l-3.4,4.6 1.6,1.2 3.2,-4.0z" fill="#EFD81C"/>
+      <path d="M3.7,-15.2l3.4,4.6 -1.6,1.2 -3.2,-4.0z" fill="#EFD81C"/>
+      <path d="M-3.4,-8.1h6.8l0.3,4.2h-7.4z" fill="#2B2B2B"/>
+      <rect x="-2.9" y="-4.1" width="2.2" height="4.1" fill="#E0AE7E"/>
+      <rect x="0.7" y="-4.1" width="2.2" height="4.1" fill="#E0AE7E"/>
+      <rect x="-3.2" y="-0.4" width="2.8" height="1.1" rx="0.4" fill="#2B2B2B"/>
+      <rect x="0.4" y="-0.4" width="2.8" height="1.1" rx="0.4" fill="#2B2B2B"/>
+    </g>
+
+    <!-- Trainerfigur GRÜN -->
+    <g id="pCoach">
+      <path d="M0,-21.2a2.7,2.7 0 0 1 2.7,2.7h-5.4a2.7,2.7 0 0 1 2.7,-2.7z" fill="#0A2E19"/>
+      <circle cx="0" cy="-18.2" r="2.7" fill="#C98D5E"/>
+      <path d="M-3.6,-15.4q3.6,-1.7 7.2,0l0.5,7.3h-8.2z" fill="#085E31"/>
+      <path d="M-3.7,-14.8l-6.4,0.6 0.2,1.9 6.3,-0.3z" fill="#085E31"/>
+      <path d="M3.7,-14.8l6.4,0.6 -0.2,1.9 -6.3,-0.3z" fill="#085E31"/>
+      <path d="M-3.4,-8.1h6.8l0.3,8.1h-7.4z" fill="#085E31"/>
+      <rect x="-3.2" y="-0.4" width="2.8" height="1.1" rx="0.4" fill="#0A2E19"/>
+      <rect x="0.4" y="-0.4" width="2.8" height="1.1" rx="0.4" fill="#0A2E19"/>
+    </g>
+
+    <!-- Pylone / Kegel -->
+    <g id="kegel">
+      <ellipse cx="0" cy="0" rx="4.2" ry="1.3" fill="#C4620A"/>
+      <path d="M-3.0,0.3 L0,-9.5 L3.0,0.3z" fill="#F07D0A"/>
+      <path d="M-1.6,-4.3 L1.6,-4.3 L1.2,-5.6 L-1.2,-5.6z" fill="#FFFFFF" opacity="0.55"/>
+    </g>
+
+    <!-- Ball -->
+    <g id="ball">
+      <circle cx="0" cy="0" r="3" fill="#FFFFFF" stroke="#2B2B2B" stroke-width="0.6"/>
+      <path d="M0,-3 L1.6,-0.6 L0.9,1.9 L-0.9,1.9 L-1.6,-0.6z" fill="#2B2B2B"/>
+    </g>
+  </defs>
+
+  <!-- ===== Titel ===== -->
+  <text x="400" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#1A1A1A">Übung: 1 gegen 1 mit Durchbruch auf das Tor</text>
+  <text x="400" y="42" text-anchor="middle" font-size="11" fill="#555">1. Ballkontakt und Dribbling · Manual Fussball Jugendliche, S. 61</text>
+
+  <!-- ===== Spielfeld ===== -->
+  <rect x="50" y="60" width="700" height="395" fill="#8ABE6C"/>
+  <!-- Rasenbänder -->
+  <rect x="50" y="60"  width="700" height="52" fill="#77B65D" opacity="0.55"/>
+  <rect x="50" y="164" width="700" height="52" fill="#77B65D" opacity="0.55"/>
+  <rect x="50" y="268" width="700" height="52" fill="#77B65D" opacity="0.55"/>
+  <rect x="50" y="372" width="700" height="52" fill="#77B65D" opacity="0.55"/>
+
+  <!-- Feldmarkierungen -->
+  <g stroke="#FFFFFF" fill="none" stroke-width="2.4" stroke-linejoin="round">
+    <!-- Torlinie -->
+    <line x1="50" y1="145" x2="750" y2="145"/>
+    <!-- Strafraum (leichte Perspektive) -->
+    <path d="M110,145 L88,271 L696,271 L672,145"/>
+    <!-- Torraum -->
+    <path d="M267,145 L262,180 L517,180 L512,145"/>
+    <!-- Strafraumbogen -->
+    <path d="M283,271 Q393,346 504,271"/>
+  </g>
+  <!-- ===== Tor ===== -->
+  <g>
+    <!-- Netzfläche mit Tiefe -->
+    <path d="M315,80 L461,80 L470,145 L306,145z" fill="#FFFFFF" opacity="0.2"/>
+    <!-- Netzmaschen -->
+    <g stroke="#FFFFFF" stroke-width="0.6" opacity="0.5" fill="none">
+      <path d="M329.6,80 L322.4,145 M344.2,80 L338.8,145 M358.8,80 L355.2,145
+               M373.4,80 L371.6,145 M388,80 L388,145 M402.6,80 L404.4,145
+               M417.2,80 L420.8,145 M431.8,80 L437.2,145 M446.4,80 L453.6,145"/>
+      <path d="M313.2,93 H462.8 M311.4,106 H464.6 M309.6,119 H466.4 M307.8,132 H468.2"/>
+    </g>
+    <!-- Pfosten und Latte -->
+    <path d="M315,145 L315,80 L461,80 L461,145" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round"/>
+    <path d="M315,80 L306,145 M461,80 L470,145" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity="0.85"/>
+  </g>
+
+  <!-- Torhüter -->
+  <use href="#pGK" x="370" y="162"/>
+
+  <!-- ===== Bewegungslinien (unter den Figuren) ===== -->
+
+  <!-- 1' Startlauf Verteidigung um die Pylone (gestrichelt = ohne Ball) -->
+  <path d="M630,256 L578,262 Q560,264 559,268 Q558,277 546,278 L346,279"
+        fill="none" stroke="#1F3D0D" stroke-width="2.2" stroke-dasharray="9,7" marker-end="url(#m-lauf)"/>
+  <text x="487" y="250" font-size="12" font-style="italic" fill="#1F3D0D">1'</text>
+
+  <!-- 1 Zuspiel auf den Angreifer (durchgezogen = Ball) -->
+  <line x1="163" y1="293" x2="389" y2="380" stroke="#2F5D14" stroke-width="2.2" marker-end="url(#m-ball)"/>
+  <text x="262" y="350" font-size="12" font-style="italic" fill="#2F5D14">1</text>
+
+  <!-- 2 Dribbling des Angreifers (Wellenlinie) -->
+  <path d="M389,373 C384,366 396,361 389,353 C382,345 394,340 387,332
+           C380,324 391,318 384,311 C376,304 386,297 377,292 C367,286 352,284 336,281"
+        fill="none" stroke="#2F5D14" stroke-width="2.2" marker-end="url(#m-dribb)"/>
+  <text x="372" y="317" font-size="12" font-style="italic" fill="#2F5D14">2</text>
+
+  <!-- 3 Torschuss (durchgezogen = Ball) -->
+  <line x1="317" y1="273" x2="443" y2="148" stroke="#2F5D14" stroke-width="2.2" marker-end="url(#m-ball)"/>
+  <text x="338" y="224" font-size="12" font-style="italic" fill="#2F5D14">3</text>
+
+  <!-- ===== Startzone Angreifer (ca. 22 m vor dem Tor) ===== -->
+  <rect x="354" y="381" width="87" height="57" fill="#A7CE51" stroke="#2F5D14" stroke-width="1.4"/>
+  <g fill="#D2232A">
+    <path d="M351,378h6v6h-6z"/><path d="M438,378h6v6h-6z"/>
+    <path d="M351,435h6v6h-6z"/><path d="M438,435h6v6h-6z"/>
+  </g>
+
+  <!-- ===== Pylonen auf der Strafraumlinie ===== -->
+  <use href="#kegel" x="200" y="271"/>
+  <use href="#kegel" x="559" y="271"/>
+
+  <!-- ===== Spieler ===== -->
+
+  <!-- Zuspieler (rot) mit Ballvorrat, links auf der Strafraumlinie -->
+  <use href="#pRed" x="166" y="271"/>
+  <use href="#ball" x="96"  y="277"/>
+  <use href="#ball" x="116" y="275"/>
+  <use href="#ball" x="106" y="289"/>
+  <use href="#ball" x="158" y="290"/>
+
+  <!-- Wartende Angreifer (rot) -->
+  <use href="#pRed" x="243" y="425"/>
+  <use href="#pRed" x="269" y="425"/>
+  <use href="#pRed" x="295" y="425"/>
+
+  <!-- Aktiver Angreifer (rot) an der Startzone -->
+  <use href="#pRedRun" x="404" y="381"/>
+
+  <!-- Wartende Verteidiger (weiss), rechts an der Strafraumlinie -->
+  <use href="#pWhite" x="645" y="272"/>
+  <use href="#pWhite" x="669" y="272"/>
+  <use href="#pWhite" x="693" y="274"/>
+
+  <!-- Aktiver Verteidiger (weiss) nach dem Start um die Pylone -->
+  <use href="#pWhiteRun" x="411" y="254"/>
+
+  <!-- Trainer -->
+  <use href="#pCoach" x="502" y="330"/>
+
+  <!-- ===== Beschreibung ===== -->
+  <rect x="50" y="468" width="700" height="72" rx="4" fill="#F5F5F5" stroke="#DDD"/>
+  <text x="62" y="486" font-size="9.5" font-weight="600" fill="#333">Ablauf:</text>
+  <text x="62" y="501" font-size="9.5" fill="#555">1 Verteidiger steht auf einem mit 2 Kegeln markierten Abschnitt der Strafraumlinie. Ein Angreifer befindet sich in einem Bereich (ca. 22 Meter) vor dem Tor.</text>
+  <text x="62" y="516" font-size="9.5" fill="#555">1 – Der Angreifer erhält ein Zuspiel. 1' – Zeitgleich startet die Verteidigung um einen der beiden Pylonen.</text>
+  <text x="62" y="531" font-size="9.5" fill="#555">2 – Der Angreifer bricht dribbelnd durch, 3 – schliesst ab. Die Verteidigung versucht, den Abschluss zu verhindern.</text>
+
+  <!-- ===== Legende ===== -->
+  <g font-size="8.5" fill="#333">
+    <line x1="60" y1="562" x2="88" y2="562" stroke="#2F5D14" stroke-width="2" marker-end="url(#m-ball)"/>
+    <text x="96" y="565">Zuspiel / Torschuss</text>
+    <path d="M196,562 c5,-5 11,4 16,-1 c5,-5 11,4 16,-1" fill="none" stroke="#2F5D14" stroke-width="2"/>
+    <text x="234" y="565">Dribbling</text>
+    <line x1="300" y1="562" x2="332" y2="562" stroke="#1F3D0D" stroke-width="2" stroke-dasharray="7,5" marker-end="url(#m-lauf)"/>
+    <text x="342" y="565">Laufweg ohne Ball</text>
+    <use href="#pRed" x="440" y="570"/>
+    <text x="450" y="565">Angriff</text>
+    <use href="#pWhite" x="504" y="570"/>
+    <text x="514" y="565">Abwehr</text>
+    <use href="#kegel" x="576" y="567"/>
+    <text x="586" y="565">Pylone</text>
+    <rect x="644" y="556" width="12" height="10" fill="#A7CE51" stroke="#2F5D14" stroke-width="1"/>
+    <text x="662" y="565">Startzone Angriff</text>
+  </g>
+</svg>
