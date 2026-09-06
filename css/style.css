@@ -288,11 +288,13 @@ body {
   overflow-x: auto;
 }
 
-.skizze svg {
+.skizze svg,
+.skizze img {
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.12);
   max-width: 100%;
   height: auto;
+  background: #fff;
 }
 
 .legende {
@@ -334,8 +336,16 @@ body {
   background: var(--fcw-grau);
 }
 
+/* Alte Tabellen (E2-Archiv) haben kein <thead>; dort ist die letzte Zeile
+   die Total-Zeile und darf fett sein. */
 .uebung tr:last-child td {
   font-weight: 700;
+}
+
+/* Neue Tabellen haben ein <thead>; die Total-Zeile steht dort im <tfoot>.
+   Die letzte Datenzeile im <tbody> ist normaler Inhalt. */
+.uebung thead ~ tbody tr:last-child td {
+  font-weight: 400;
 }
 
 /* ===== TIPPS-SEITE ===== */
@@ -363,8 +373,30 @@ body {
   border: 1px solid var(--fcw-gelb);
   border-radius: var(--radius);
   padding: 16px 18px;
-  margin-top: 20px;
+  margin: 20px 0 16px;
   font-size: 0.92rem;
+}
+
+/* Der globale Reset setzt padding auf 0. Ohne diese Regeln stehen die
+   Aufzaehlungspunkte auf der Kastenkante. */
+.highlight-box h2 {
+  color: var(--fcw-dunkel);
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.highlight-box ul,
+.highlight-box ol {
+  padding-left: 22px;
+  margin: 0;
+}
+
+.highlight-box li {
+  margin-bottom: 6px;
+}
+
+.highlight-box li:last-child {
+  margin-bottom: 0;
 }
 
 /* ===== SEKTIONEN ===== */
@@ -372,7 +404,7 @@ body {
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--fcw-blau);
-  margin-bottom: 14px;
+  margin: 26px 0 14px;
   padding-left: 2px;
 }
 
@@ -473,6 +505,103 @@ body {
   margin-top: 20px;
 }
 
+/* ===== TRAININGSDETAIL: ZUSATZELEMENTE ===== */
+.uebung h3 {
+  font-size: 0.95rem;
+  color: var(--fcw-dunkel);
+  margin: 14px 0 6px;
+}
+
+.uebung ol {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.uebung ol li {
+  margin-bottom: 5px;
+  font-size: 0.92rem;
+}
+
+.uebung tfoot td {
+  font-weight: 700;
+  border-top: 2px solid var(--fcw-grau-mid);
+}
+
+/* Quellenangabe innerhalb eines Zitats */
+.quelle {
+  display: block;
+  font-style: normal;
+  font-size: 0.78rem;
+  color: #666;
+  margin-top: 6px;
+}
+
+/* Titel und Bildunterschrift einer Skizze */
+.skizze-titel {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--fcw-blau);
+  text-align: center;
+  margin: 14px 0 -4px;
+}
+
+.skizze-bu {
+  font-size: 0.78rem;
+  color: #666;
+  text-align: center;
+  margin: -2px 0 14px;
+}
+
+/* Legende zentriert (Trainingsdetail) */
+.skizze + .legende {
+  justify-content: center;
+}
+
+/* Hinweiskasten fuer eigene Anpassungen und Ergaenzungen */
+.eigen {
+  background: #fef9e7;
+  border-left: 4px solid var(--fcw-gelb);
+  padding: 10px 14px;
+  margin: 12px 0;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.88rem;
+}
+.eigen strong { color: #8a6d00; }
+
+/* Farbpunkt in der Legende (Alternative zum Inline-SVG) */
+.dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: inline-block;
+  flex: none;
+}
+
+/* Feste Kommandos / Rufe */
+.rufe {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin: 12px 0;
+}
+.ruf {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  background: var(--fcw-grau);
+  border-radius: 8px;
+  padding: 10px 14px;
+  border-left: 4px solid var(--fcw-rot);
+}
+.ruf b {
+  font-size: 1rem;
+  color: var(--fcw-rot);
+  letter-spacing: 0.5px;
+  flex: none;
+  min-width: 118px;
+}
+.ruf span { font-size: 0.88rem; }
+
 /* ===== RESPONSIVE ===== */
 @media (min-width: 600px) {
   .header h1 {
@@ -523,7 +652,8 @@ body {
     background: #fff;
   }
 
-  .skizze svg {
+  .skizze svg,
+  .skizze img {
     box-shadow: none;
   }
 }
