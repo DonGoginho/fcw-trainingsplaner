@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 440" font-family="Inter, sans-serif">
+  <title>Big 4 – Bereich 3: Ischios (Hamstrings)</title>
+  <text x="260" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">Big 4 – Bereich 3: Ischios (Hamstrings)</text>
+  <text x="260" y="38" text-anchor="middle" font-size="11" fill="#555">Körperstabilität · Manual S. 76</text>
+
+  <!-- Hintergrund -->
+  <rect x="30" y="55" width="460" height="300" rx="6" fill="#e8f5e9" stroke="#4a8f3f" stroke-width="1.5"/>
+
+  <!-- Variante 1: Einbeinstand (Waage) -->
+  <rect x="45" y="70" width="140" height="140" rx="4" fill="#fff" stroke="#ddd"/>
+  <text x="115" y="86" text-anchor="middle" font-size="8" font-weight="700" fill="#333">V1: Einbeinstand</text>
+  <!-- Figur in Waage-Position -->
+  <circle cx="90" cy="115" r="7" fill="#e74c3c" stroke="#fff" stroke-width="1"/>
+  <line x1="90" y1="122" x2="90" y2="145" stroke="#e74c3c" stroke-width="2"/>
+  <!-- Standbein -->
+  <line x1="90" y1="145" x2="90" y2="175" stroke="#e74c3c" stroke-width="2"/>
+  <!-- Hinteres Bein (Waage) -->
+  <line x1="90" y1="145" x2="130" y2="130" stroke="#e74c3c" stroke-width="2"/>
+  <!-- Arme nach vorne -->
+  <line x1="90" y1="130" x2="60" y2="120" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="115" y="190" text-anchor="middle" font-size="7" fill="#555">Knie leicht gebeugt</text>
+  <text x="115" y="199" text-anchor="middle" font-size="7" fill="#555">Arme nach vorne</text>
+
+  <!-- Variante 2: Mit Ball -->
+  <rect x="195" y="70" width="140" height="140" rx="4" fill="#fff" stroke="#ddd"/>
+  <text x="265" y="86" text-anchor="middle" font-size="8" font-weight="700" fill="#333">V2: Mit Ball</text>
+  <circle cx="240" cy="115" r="7" fill="#e74c3c" stroke="#fff" stroke-width="1"/>
+  <line x1="240" y1="122" x2="240" y2="145" stroke="#e74c3c" stroke-width="2"/>
+  <line x1="240" y1="145" x2="240" y2="175" stroke="#e74c3c" stroke-width="2"/>
+  <line x1="240" y1="145" x2="280" y2="130" stroke="#e74c3c" stroke-width="2"/>
+  <!-- Ball über Kopf -->
+  <circle cx="228" cy="105" r="5" fill="#fff" stroke="#333" stroke-width="1"/>
+  <line x1="240" y1="130" x2="228" y2="110" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="265" y="190" text-anchor="middle" font-size="7" fill="#555">Ball über Kopf</text>
+  <text x="265" y="199" text-anchor="middle" font-size="7" fill="#555">Kleine Bewegungen</text>
+
+  <!-- Variante 3: Ausfallschritt + Ballwurf -->
+  <rect x="345" y="70" width="140" height="140" rx="4" fill="#fff" stroke="#ddd"/>
+  <text x="415" y="86" text-anchor="middle" font-size="8" font-weight="700" fill="#333">V3: Ballwurf</text>
+  <circle cx="400" cy="115" r="7" fill="#e74c3c" stroke="#fff" stroke-width="1"/>
+  <line x1="400" y1="122" x2="400" y2="145" stroke="#e74c3c" stroke-width="2"/>
+  <line x1="400" y1="145" x2="385" y2="175" stroke="#e74c3c" stroke-width="2"/>
+  <line x1="400" y1="145" x2="415" y2="175" stroke="#e74c3c" stroke-width="2"/>
+  <!-- Ball zur Wand/Partner -->
+  <circle cx="440" cy="130" r="5" fill="#fff" stroke="#333" stroke-width="1"/>
+  <path d="M407,132 Q425,125 435,130" fill="none" stroke="#2980b9" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="415" y="190" text-anchor="middle" font-size="7" fill="#555">Im Ausfallschritt</text>
+  <text x="415" y="199" text-anchor="middle" font-size="7" fill="#555">Ball gegen Wand</text>
+
+  <!-- Variante 4: Bein + Ellenbogen zusammenführen -->
+  <rect x="45" y="220" width="440" height="60" rx="4" fill="#fff" stroke="#ddd"/>
+  <text x="65" y="240" font-size="8" font-weight="700" fill="#333">V4: Einbeinige Waageposition</text>
+  <text x="65" y="255" font-size="8" fill="#555">Bein und Ellenbogen unter dem Körper zusammenführen. Rücken gerade,</text>
+  <text x="65" y="268" font-size="8" fill="#555">Kopf aufrecht, Bauchmuskeln anspannen. Variante: Gummiband verwenden.</text>
+
+  <!-- Coaching -->
+  <rect x="45" y="290" width="440" height="55" rx="4" fill="#fff" stroke="#ddd"/>
+  <text x="55" y="308" font-size="9" fill="#333" font-weight="600">Coaching-Punkte:</text>
+  <text x="55" y="323" font-size="9" fill="#555">• Rücken und Kopf gerade halten • Position stabil halten</text>
+  <text x="55" y="338" font-size="9" fill="#555">• Zeitvorgaben, nicht Wiederholungen • Qualität vor Quantität</text>
+
+  <!-- Bereich-Label -->
+  <rect x="30" y="365" width="460" height="30" rx="4" fill="#4a8f3f"/>
+  <text x="260" y="385" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Ischios-Kräftigung – Verletzungsprävention Hamstrings</text>
+</svg>
