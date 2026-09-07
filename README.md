@@ -10,9 +10,9 @@ Spielbetrieb nach FVRZ-Merkblatt Junioren D/7: 7er-Spielfeld (55–41 m × 35–
 
 ### Trainingsbestand D7b
 
-Stand 06.09.2026: 21 Trainingseinheiten (je 90 Min., ausser EL-1) + D7-Regeln zum Nachschlagen.
+Stand 07.09.2026: 25 Trainingseinheiten (je 90 Min., ausser EL-1) + D7-Regeln zum Nachschlagen.
 
-Alle 20 Trainingseinheiten à 90 Min. folgen dem Trainingsschema des J+S-Manuals (Einstieg – Hauptteil – Abschluss),
+Alle 24 Trainingseinheiten à 90 Min. folgen dem Trainingsschema des J+S-Manuals (Einstieg – Hauptteil – Abschluss),
 beginnen mit einem SFV-Lernbaustein und nutzen die Good-Practice-Formen des Manuals.
 
 | Nr | Titel | Kategorie | Datei |
@@ -25,6 +25,7 @@ beginnen mit einem SFV-Lernbaustein und nutzen die Good-Practice-Formen des Manu
 | O-3 | Flügelspiel & Seitenwechsel | Ballbesitz | `ballbesitz-fluegelspiel.html` |
 | O-4 | Überzahl herausspielen | Ballbesitz | `ballbesitz-ueberzahl.html` |
 | O-5 | Tempowechsel & Spielkontrolle | Ballbesitz | `ballbesitz-tempowechsel.html` |
+| O-6 | Kopfball | Ballbesitz | `ballbesitz-kopfball.html` |
 | D-1 | 1v1 Verteidigen | Verteidigen | `verteidigen-1v1.html` |
 | D-2 | Pressing als Team | Verteidigen | `verteidigen-pressing.html` |
 | D-3 | Verschieben & Kompaktheit | Verteidigen | `verteidigen-verschieben.html` |
@@ -33,6 +34,9 @@ beginnen mit einem SFV-Lernbaustein und nutzen die Good-Practice-Formen des Manu
 | E-2 | Zusammen den Ball jagen | Ball erobern | `erobern-zusammen.html` |
 | E-3 | Pressing-Fallen stellen | Ball erobern | `erobern-pressing-falle.html` |
 | E-4 | Umschalten nach Ballgewinn | Ball erobern | `erobern-umschalten.html` |
+| R-1 | Sofort nachsetzen | Gegenpressing | `gegenpressing-nachsetzen.html` |
+| R-2 | Geordnet zurückfallen | Gegenpressing | `gegenpressing-zurueckfallen.html` |
+| R-3 | Konter verhindern | Gegenpressing | `gegenpressing-konter-verhindern.html` |
 | A-1 | Schnelligkeit & Reaktion | Athletik | `athletik-schnelligkeit.html` |
 | A-2 | Koordination & Wendigkeit | Athletik | `athletik-koordination.html` |
 | A-3 | Ausdauer durch Spielformen | Athletik | `athletik-ausdauer.html` |
