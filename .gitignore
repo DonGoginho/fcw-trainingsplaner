@@ -1,0 +1,22 @@
+# Arbeitsanweisungen fuer Claude -- bewusst NICHT versioniert.
+#
+# Die Datei liegt hier, weil sie genau dieses Repo dokumentiert (Konventionen
+# fuer neue Trainings, Themen-Kuerzel, Trainingsbestand, Deployment) und Claude
+# sie beim Arbeiten im Repo automatisch findet.
+#
+# Sie gehoert aber nicht auf das oeffentliche GitHub-Remote. Sie enthaelt interne
+# Notizen -- unter anderem den Hinweis, dass in der Git-History dieses Repos noch
+# Vornamen von Spielern stehen, und einen internen Netzpfad. Beides waere auf
+# GitHub ein Wegweiser bzw. eine unnoetige Preisgabe.
+#
+# Konsequenz: Die Datei hat KEIN Backup ueber dieses Repo. Wer sie sichert,
+# macht das ausserhalb von Git.
+CLAUDE.md
+
+# Entwurf der Kompass-Navigation -- abgelehnt, bleibt als Beleg liegen
+d7b-2026-2027/index-kompass.html
+
+# Lokale Claude-Einstellungen. Enthalten Pfade vom Arbeitsplatz (Benutzername,
+# OneDrive-Ordner) und gehoeren niemandem ausser dem Rechner, auf dem sie stehen.
+# Waren bis 29.09.2026 versehentlich versioniert -- in der History stehen sie noch.
+.claude/settings.local.json
