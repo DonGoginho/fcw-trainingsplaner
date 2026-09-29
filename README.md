@@ -97,10 +97,11 @@ Jede Übung ist ein `<div class="uebung">`. Die Sticky-Navigation liest diese Bl
 
 ### Übungsskizzen
 
-Zwei Quellen, klar getrennt:
+Drei Quellen, klar getrennt:
 
-- **`img/diagramme/`** — nachgezeichnete Diagramme aus dem Good-Practice-Kapitel des J+S-Manuals, per `<img>` eingebunden. Wird verwendet, wo eine Manual-Vorlage existiert.
-- **Inline-SVG** in der Trainingsseite — eigene Skizzen für alles ohne Vorlage: Platzaufteilung, Einstiegsformen aus den SFV-Lernbausteinen, Rotationspläne.
+- **`img/manual/`** — Originalgrafiken aus dem Good-Practice-Kapitel des J+S-Manuals, per `<img>` eingebunden. Wird im Hauptteil verwendet, wo eine Manual-Vorlage existiert.
+- **`img/einstieg/`** — Originalgrafiken der SFV-Lernbausteine, je drei Phasen. Wird im Einstieg für E1, E2 und E3 verwendet.
+- **Inline-SVG** in der Trainingsseite — eigene Skizzen nur noch für das, was in keiner Vorlage steht: Platzaufteilung und Rotationspläne.
 
 Weicht der Aufbau von der Vorlage ab (andere Spielerzahl, Feldgrösse), werden **beide** gezeigt: oben das Manual-Diagramm, darunter die eigene Skizze als «So steht es heute».
 
@@ -112,7 +113,7 @@ wofür gebraucht wird und was in der Pause umgebaut werden muss. Grundsatz: nur 
 ## Features
 
 - **Spielphasen-Filter** (Ballbesitz, Verteidigen, Erobern, Gegenpressing, Athletik, Team, Einlaufen, Regeln)
-- **Übungsskizzen** als Inline-SVG und Manual-Diagramme
+- **Übungsskizzen** als Originalgrafiken aus Manual und SFV-Lernbausteinen, ergänzt um eigene Inline-SVG
 - **Sticky-Navigation** am unteren Bildschirmrand zum Blättern zwischen Übungen
 - **Mobile-optimiert** für die Nutzung am Spielfeldrand
 - **Druckbar** mit sauberem Print-Layout
