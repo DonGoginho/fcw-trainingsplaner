@@ -4,7 +4,7 @@ Mobile-first Website für die Trainingsplanung beim **FC Wiedikon**. Optimiert f
 
 ## Aktive Saison
 
-**D7b-Junioren 2026/2027** — 7er-Fussball, 12 Spieler (Jahrgang 2014/2015), System 1-3-2-1
+**D7b-Junioren 2026/2027** — 7er-Fussball, 12 Spieler (Jahrgang 2014/2015), System 1-3-3 (bis 05.09.2026: 1-2-3-1)
 
 Spielbetrieb nach FVRZ-Merkblatt Junioren D/7: 7er-Spielfeld (55–41 m × 35–25 m).
 
